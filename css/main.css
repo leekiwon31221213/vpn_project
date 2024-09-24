@@ -22,7 +22,7 @@ body {
 
 /* 프로그램 다운로드  */
 button.program-down-btn {
-  width: 225px;
+  width: clamp(190px, 18.537vw, 225px);
   height: 72px;
   color: rgb(55, 83, 225);
   background-color: rgb(255, 255, 255);
@@ -65,17 +65,17 @@ button.program-down-btn {
   flex: 1;
 }
 .header-main-container header nav ul.logo-menu-box li:nth-child(2) {
-  font-size: 22px;
+  font-size: clamp(2rem, 1.951vw, 2.2rem);
 }
 .header-main-container header nav ul.logo-menu-box li:nth-child(2) a:nth-child(1) {
-  margin-right: 60px;
+  margin-right: clamp(3rem, 2.927vw, 6rem);
 }
 .header-main-container header nav ul.logo-menu-box li:nth-child(2) a:nth-child(2) {
-  margin-right: 60px;
+  margin-right: clamp(3rem, 2.927vw, 6rem);
 }
 .header-main-container header nav ul.logo-menu-box li:nth-child(2) button {
-  font-size: 1.8rem;
-  width: 183px;
+  font-size: clamp(1.6rem, 1.561vw, 1.8rem);
+  width: clamp(160px, 15.61vw, 183px);
   height: 53px;
   border-radius: 6px;
 }
@@ -83,7 +83,7 @@ button.program-down-btn {
   margin-top: 55px;
 }
 .header-main-container main span.sub-text {
-  font-size: 2.4rem;
+  font-size: clamp(2.2rem, 2.146vw, 2.4rem);
   display: flex;
   align-items: center;
   color: rgb(243, 243, 243);
@@ -97,13 +97,13 @@ button.program-down-btn {
   margin-left: 20px;
 }
 .header-main-container main h1 {
-  font-size: 7.2rem;
+  font-size: clamp(4.8rem, 4.683vw, 7.2rem);
   font-weight: 600;
   margin-bottom: 20px;
   letter-spacing: -2.5px;
 }
 .header-main-container main p {
-  font-size: 40px;
+  font-size: clamp(2.8rem, 2.732vw, 4rem);
   font-weight: 600;
   margin-bottom: 80px;
 }
@@ -111,7 +111,7 @@ button.program-down-btn {
   display: flex;
 }
 .header-main-container main ul li:nth-child(1) button {
-  font-size: 2.2rem;
+  font-size: clamp(2rem, 1.951vw, 2.2rem);
   margin-right: 20px;
 }
 .header-main-container main ul li:nth-child(2) {
@@ -120,13 +120,13 @@ button.program-down-btn {
   justify-content: center;
   border: 1px solid #fff;
   border-radius: 16px;
-  width: 225px;
+  width: clamp(190px, 18.537vw, 225px);
   height: 72px;
 }
 .header-main-container main ul li:nth-child(2) a {
   display: flex;
   align-items: center;
-  font-size: 22px;
+  font-size: clamp(2rem, 1.951vw, 2.2rem);
 }
 .header-main-container main ul li:nth-child(2) a img {
   margin-right: 10px;
@@ -143,7 +143,7 @@ button.program-down-btn {
 .section .section__inner p.section-sub-title {
   padding: 170px 0 20px;
   color: rgb(33, 33, 33);
-  font-size: 2.4rem;
+  font-size: clamp(2.2rem, 2.146vw, 2.4rem);
   position: relative;
 }
 .section .section__inner p.section-sub-title::before {
@@ -191,6 +191,7 @@ button.program-down-btn {
   justify-content: center;
   gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .section1 .section1__inner .month-contract-box li:not(.select-box .option) {
   width: 285px;
@@ -204,12 +205,24 @@ button.program-down-btn {
   align-items: center;
   position: relative;
 }
+@keyframes sale_ani {
+  0% {
+    top: -130px;
+  }
+  50% {
+    top: -140px;
+  }
+  100% {
+    top: -130px;
+  }
+}
 .section1 .section1__inner .month-contract-box li:not(.select-box .option) img {
   position: absolute;
   top: -130px;
+  animation: sale_ani 2s ease-in-out infinite;
 }
 .section1 .section1__inner .month-contract-box li:not(.select-box .option) span.month-contract-text {
-  font-size: 2.4rem;
+  font-size: clamp(2.2rem, 2.146vw, 2.4rem);
 }
 .section1 .section1__inner .month-contract-box li:not(.select-box .option) p {
   font-weight: 600;
@@ -231,52 +244,20 @@ button.program-down-btn {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
-.section2 .section2__inner .section2-contents li:nth-child(2) {
-  position: relative;
-}
-.section2 .section2__inner .section2-contents li:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  left: -23px;
-  top: 0;
-  height: 381px;
-  border-left: 1px dashed rgb(201, 201, 201);
-}
-.section2 .section2__inner .section2-contents li:nth-child(3) {
-  position: relative;
-}
-.section2 .section2__inner .section2-contents li:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  left: -23px;
-  top: 0;
-  height: 381px;
-  border-left: 1px dashed rgb(201, 201, 201);
-}
-.section2 .section2__inner .section2-contents li:nth-child(4) {
-  position: relative;
-}
-.section2 .section2__inner .section2-contents li:nth-child(4)::after {
-  content: "";
-  position: absolute;
-  left: -23px;
-  top: 0;
-  height: 381px;
-  border-left: 1px dashed rgb(201, 201, 201);
-}
-.section2 .section2__inner .section2-contents li .emphasis {
+.section2 .section2__inner .section2-contents .emphasis {
   color: rgb(55, 83, 225);
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 1.561vw, 1.8rem);
   font-weight: 600;
   margin: 15px auto;
 }
-.section2 .section2__inner .section2-contents li .title {
+.section2 .section2__inner .section2-contents .title {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
-.section2 .section2__inner .section2-contents li span {
+.section2 .section2__inner .section2-contents span {
   font-size: 1.7rem;
   line-height: 2.3rem;
   margin-bottom: 70px;
@@ -298,7 +279,7 @@ button.program-down-btn {
 .section3 .section3__inner p.section-sub-title {
   padding-top: 87px;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: clamp(2.2rem, 2.146vw, 2.4rem);
   font-weight: 400;
 }
 .section3 .section3__inner p.section-sub-title::before {
@@ -392,7 +373,8 @@ button.program-down-btn {
 footer {
   width: 100%;
   background-color: rgb(24, 25, 33);
-  height: 180px;
+  height: 100%;
+  min-height: 180px;
 }
 footer img {
   margin-right: 60px;
