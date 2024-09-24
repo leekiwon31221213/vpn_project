@@ -1,0 +1,161 @@
+.select-box {
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  color: rgba(33, 33, 33, 1);
+}
+.family-site-title {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.select-box.select-box.exchange-select-order-rate {
+  max-width: 105px;
+}
+
+@media (max-width: 650px) {
+  .select-box {
+    font-size: 1.2rem;
+    width: 96%;
+    height: 40px;
+    line-height: 39px;
+  }
+}
+
+.select-box:active,
+.select-box.open,
+.select-box:focus {
+  border: solid 1px #ccc;
+}
+.select-box:after {
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+  content: '';
+  display: block;
+  height: 7px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 7px;
+}
+.select-box.open:after {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+/* 리스트 */
+.select-box.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1) translateY(0);
+  -ms-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+}
+.select-box.disabled {
+  border-color: #ededed;
+  color: red;
+  pointer-events: none;
+}
+
+.select-box .list {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+  box-sizing: border-box;
+  margin-top: 4px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+  -ms-transform: scale(0.75) translateY(-21px);
+  transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.3s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition: all 0.3s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  z-index: 9;
+  height: 200px;
+  overflow-y: auto;
+  width: 189px;
+}
+
+.partnership-inquiry .select-box.exchange-select-order-rate .list {
+  left: unset;
+  right: 0;
+}
+.select-box .list:hover .option:not(:hover) {
+  background-color: transparent;
+}
+.select-box .option {
+  color: rgba(33, 33, 33, 1);
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 650px) {
+  .select-box .option {
+    font-size: 1.1rem;
+  }
+}
+.select-box .option:hover,
+.select-box .option.focus,
+.select-box .option.selected.focus {
+  background-color: #f6f6f6;
+}
+.select-box .option.selected {
+  font-weight: 600;
+}
+
+@media (max-width: 550px) {
+  .partnership-inquiry .email-box .select-box .list {
+    width: 100px;
+  }
+}

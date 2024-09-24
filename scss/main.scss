@@ -1,0 +1,486 @@
+$main-color: rgba(55, 83, 225, 1);
+$fontFamily: 'Pretendard-Regular';
+$border-radius: 16px;
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: $border-radius;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+  font-family: $fontFamily;
+  color: #333;
+}
+
+/* 프로그램 다운로드  */
+@mixin program-down($width, $height, $color, $bg-color, $border-radius) {
+  width: $width;
+  height: $height;
+  color: $color;
+  background-color: $bg-color;
+  border-radius: $border-radius;
+}
+
+button.program-down-btn {
+  @include program-down(225px, 72px, rgba(55, 83, 225, 1), rgba(255, 255, 255, 1), $border-radius);
+  font-weight: 600;
+}
+/* // */
+
+/* 섹션1 박스  */
+
+@mixin price-box($width, $height, $bg-color, $border-radius, $box-shadow, $padding) {
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $padding;
+}
+
+@mixin buy-btn($width, $height, $bg-color, $border-radius, $color, $margin) {
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  color: $color;
+  margin: $margin;
+}
+/* // */
+
+// 메인 비주얼
+.header-main-container {
+  width: 100%;
+  height: 688px;
+  background: url(/img/main_bg.svg) no-repeat center center;
+  background-size: cover;
+
+  header,
+  main {
+    max-width: 1550px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+  }
+  header {
+    height: 140px;
+    nav {
+      ul.login-box {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 0;
+        li {
+          &:nth-child(1) {
+            margin-right: 30px;
+          }
+        }
+      }
+
+      ul.logo-menu-box {
+        display: flex;
+        align-items: center;
+        li {
+          &:nth-child(1) {
+            flex: 1;
+          }
+          &:nth-child(2) {
+            font-size: 22px;
+            a {
+              &:nth-child(1) {
+                margin-right: 60px;
+              }
+              &:nth-child(2) {
+                margin-right: 60px;
+              }
+            }
+            button {
+              font-size: 1.8rem;
+              width: 183px;
+              height: 53px;
+              border-radius: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    margin-top: 55px;
+    span.sub-text {
+      font-size: 2.4rem;
+      display: flex;
+      align-items: center;
+      color: rgba(243, 243, 243, 1);
+      margin-bottom: 50px;
+
+      &::after {
+        content: '';
+        width: 80px;
+        height: 1px;
+        background-color: rgba(198, 198, 198, 1);
+        margin-left: 20px;
+      }
+    }
+    h1 {
+      font-size: 7.2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: -2.5px;
+    }
+    p {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 80px;
+    }
+    ul {
+      display: flex;
+      li {
+        &:nth-child(1) button {
+          font-size: 2.2rem;
+          margin-right: 20px;
+        }
+        &:nth-child(2) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #fff;
+          border-radius: $border-radius;
+          width: 225px;
+          height: 72px;
+          a {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            img {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* // */
+
+//섹션공통
+
+.section {
+  .section__inner {
+    max-width: 1550px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+    p.section-sub-title {
+      padding: 170px 0 20px;
+      color: rgba(33, 33, 33, 1);
+      font-size: 2.4rem;
+      position: relative;
+      &::before {
+        content: '+';
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+        background-color: rgba(55, 83, 225, 1);
+        border-radius: 50%;
+        color: #fff;
+        top: 90px;
+        left: 49%;
+      }
+    }
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 80px;
+    }
+  }
+  p.notice {
+    font-size: 2rem;
+    padding: 55px 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before {
+      content: '!';
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      color: #fff;
+      background-color: #333;
+      display: inline-block;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+  }
+}
+
+// 섹션1
+.section1 {
+  background-color: rgba(244, 244, 244, 1);
+  .section1__inner {
+    .month-contract-box {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+
+      li:not(.select-box .option) {
+        @include price-box(285px, 340px, rgba(255, 255, 255, 1), 20px, 0 0 50px rgba(0, 0, 0, 0.1), 55px 33px 40px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: -130px;
+        }
+        span.month-contract-text {
+          font-size: 2.4rem;
+        }
+        p {
+          font-weight: 600;
+          font-size: 3.5rem;
+          margin: 10px auto 40px;
+        }
+        button {
+          @include buy-btn(220px, 50px, rgba(0, 0, 0, 1), 6px, #fff, 25px 0 0 0);
+        }
+      }
+    }
+  }
+}
+/* // */
+
+// 섹션2
+
+.section2 {
+  .section2__inner {
+    .section2-contents {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      li {
+        @for $i from 2 through 4 {
+          &:nth-child(#{$i}) {
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              left: -23px;
+              top: 0;
+              height: 381px;
+              border-left: 1px dashed rgb(201, 201, 201);
+            }
+          }
+        }
+
+        .emphasis {
+          color: $main-color;
+          font-size: 1.8rem;
+          font-weight: 600;
+          margin: 15px auto;
+        }
+        .title {
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 30px;
+        }
+        span {
+          font-size: 1.7rem;
+          line-height: 2.3rem;
+          margin-bottom: 70px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+/* // */
+
+//섹션3
+.section3 {
+  background: url(/img/banner.svg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 30px;
+  color: #fff;
+  margin-bottom: 180px;
+  .section3__inner {
+    p.section-sub-title {
+      padding-top: 87px;
+      color: #fff;
+      font-size: 2.4rem;
+      font-weight: 400;
+      &::before {
+        display: none;
+      }
+    }
+    .counsel-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      li {
+        border: 1px solid #fff;
+        width: 100%;
+        max-width: 225px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: $border-radius;
+
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+/* // */
+
+//섹션4
+
+.section4 {
+  .section4__inner {
+    .table-tie {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      gap: 30px;
+      margin-bottom: 120px;
+
+      table {
+        vertical-align: middle;
+
+        thead {
+          background-color: $main-color;
+          height: 33px;
+          display: flex;
+          align-items: center;
+          border-radius: 6px;
+          color: #fff;
+          font-size: 1.7rem;
+          tr {
+            width: 100%;
+            padding: 10px 20px;
+            th {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 10px;
+              font-size: 1.5rem;
+              @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                  border-bottom: 1px solid #ccc;
+                }
+                .td-date {
+                  padding-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* // */
+
+//푸터
+footer {
+  width: 100%;
+  background-color: rgba(24, 25, 33, 1);
+  height: 180px;
+  img {
+    margin-right: 60px;
+  }
+
+  .footer__inner {
+    display: flex;
+    max-width: 1550px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 45px 0;
+    color: rgba(255, 255, 255, 0.8);
+    ul {
+      margin-right: 145px;
+      li {
+        display: flex;
+        &:nth-child(2) {
+          margin: 8px auto;
+        }
+        dl {
+          @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+              margin-right: 20px;
+            }
+          }
+          display: flex;
+        }
+      }
+    }
+
+    .terms-privacy-cs-box {
+      a {
+        margin-bottom: 25px;
+        display: inline-block;
+        &:nth-child(2) {
+          &::before {
+            content: '';
+            width: 1px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 0 10px;
+            display: inline-block;
+          }
+          &::after {
+            content: '';
+            width: 1px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 0 10px;
+            display: inline-block;
+          }
+        }
+      }
+      .copy-right {
+        text-align: right;
+      }
+    }
+  }
+}
+
+/* // */

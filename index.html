@@ -4,8 +4,372 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vpn</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/nice.select.css" />
   </head>
   <body>
-    <div id="wrap"></div>
+    <div id="wrap">
+      <!-- 메인 비주얼 -->
+      <div class="header-main-container">
+        <header>
+          <nav>
+            <!-- 로그인 -->
+            <ul class="login-box">
+              <li><a href="#none">로그인</a></li>
+              <li><a href="#none">회원가임</a></li>
+            </ul>
+            <!-- 메뉴 -->
+            <ul class="logo-menu-box">
+              <li>
+                <a href="#none"><img src="./img/logo.svg" alt="헤더 로고" /></a>
+              </li>
+
+              <li>
+                <a href="#none">고객센터</a>
+                <a href="#none">VPN 사용방법</a>
+                <button type="button" class="program-down-btn">프로그램 다운로드</button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+          <span class="sub-text">가장 빠르고 안정적인 글로벌 VPN</span>
+
+          <h1>업계 유일 최저 가격의 VPN</h1>
+          <p>최고 품질의 다이렉트 전용선 회선 제공</p>
+
+          <ul>
+            <li><button type="button" class="program-down-btn">프로그램 다운로드</button></li>
+            <li>
+              <a href="#none">
+                <img src="./img/play_icon.svg" alt="사용방법 아이콘" />
+                <span>VPN 사용방법</span>
+              </a>
+            </li>
+          </ul>
+        </main>
+      </div>
+      <!-- // -->
+
+      <!-- 이용권 구매하기 -->
+      <section class="section section1">
+        <div class="section__inner section1__inner">
+          <p class="section-sub-title">원하시는 사용환경에 따라 요금제를 선택하세요!</p>
+          <h2>이용권 구매하기</h2>
+
+          <ol class="month-contract-box">
+            <li>
+              <span class="month-contract-text">1개월 약정</span>
+              <p>₩ 10,000</p>
+              <select class="custom-select">
+                <option value="subject" selected="selected">동시 접속 가능 수량</option>
+                <option value="content">내용</option>
+                <option value="writer_name">글쓴이</option>
+                <option value="member_id">아이디</option>
+                <option value="nick_name">별명</option>
+              </select>
+              <button type="button">구매하기</button>
+            </li>
+            <li>
+              <img src="./img/sale1.svg" alt="10%" />
+              <span class="month-contract-text">3개월 약정</span>
+              <p>₩ 10,000</p>
+              <select class="custom-select">
+                <option value="subject" selected="selected">동시 접속 가능 수량</option>
+                <option value="content">내용</option>
+                <option value="writer_name">글쓴이</option>
+                <option value="member_id">아이디</option>
+                <option value="nick_name">별명</option>
+              </select>
+              <button type="button">구매하기</button>
+            </li>
+            <li>
+              <img src="./img/sale2.svg" alt="15%" />
+              <span class="month-contract-text">6개월 약정</span>
+              <p>₩ 10,000</p>
+              <select class="custom-select">
+                <option value="subject" selected="selected">동시 접속 가능 수량</option>
+                <option value="content">내용</option>
+                <option value="writer_name">글쓴이</option>
+                <option value="member_id">아이디</option>
+                <option value="nick_name">별명</option>
+              </select>
+              <button type="button">구매하기</button>
+            </li>
+            <li>
+              <img src="./img/sale3.svg" alt="20%" />
+              <span class="month-contract-text">12개월 약정</span>
+              <p>₩ 10,000</p>
+              <select class="custom-select">
+                <option value="subject" selected="selected">동시 접속 가능 수량</option>
+                <option value="content">내용</option>
+                <option value="writer_name">글쓴이</option>
+                <option value="member_id">아이디</option>
+                <option value="nick_name">별명</option>
+              </select>
+              <button type="button">구매하기</button>
+            </li>
+          </ol>
+
+          <p class="notice">한중 전용선,SD-WAN 등 커스텀 문의</p>
+        </div>
+      </section>
+
+      <!-- 왜 VPNLOGO 인가요? -->
+      <section class="section section2">
+        <div class="section__inner section2__inner">
+          <p class="section-sub-title">SNS, 구글, 유튜브, 인스타그램 등 해외에서도 문제없이 OK!</p>
+          <h2>왜 VPNLOGO 인가요?</h2>
+
+          <ul class="section2-contents">
+            <li>
+              <img src="./img/section2_img.svg" alt="프리미엄 다이렉트" />
+              <p class="emphasis">01</p>
+              <p class="title">프리미엄 다이렉트</p>
+              <span
+                >프리미엄 해저 고속 <br />
+                다이렉트 전용선 제공</span
+              >
+            </li>
+            <li>
+              <img src="./img/section2_img2.svg" alt="게임 전용선" />
+              <p class="emphasis">02</p>
+              <p class="title">게임 전용선</p>
+              <span
+                >게이머들을 위한 회선 <br />
+                저렴한 가격에 제공</span
+              >
+            </li>
+            <li>
+              <img src="./img/section2_img3.svg" alt="OTT 최고화질" />
+              <p class="emphasis">03</p>
+              <p class="title">OTT 최고화질</p>
+              <span
+                >유투브, 넷플릭스 등 <br />
+                OTT 최고 화질 시청 가능</span
+              >
+            </li>
+            <li>
+              <img src="./img/section2_img4.svg" alt="업무 최적화" />
+              <p class="emphasis">04</p>
+              <p class="title">업무 최적화</p>
+              <span
+                >회사 업무 전용 <br />
+                만정적인 회선 제공</span
+              >
+            </li>
+          </ul>
+          <p class="notice">PC ·MAC · 아이폰 · 안드로이드에서 간단한 설치 후, 바로 사용가능합니다.</p>
+        </div>
+      </section>
+
+      <!-- 무엇을 도와드릴까요? -->
+      <section class="section section3">
+        <div class="section__inner section3__inner">
+          <p class="section-sub-title">실시간 채팅을 통해 신속하고 정확하게 도와드리겠습니다!</p>
+          <h2>무엇을 도와드릴까요?</h2>
+
+          <ul class="counsel-box">
+            <li>
+              <a href="#none">
+                <img src="./img/kakao_icon.svg" alt="카카오상담" />
+                <p>카카오톡 상담</p>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="./img/widget_icon.svg" alt="위젯상담" />
+                <p>위젯 상담</p>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="./img/chat_icon.svg" alt="실시간 상담" />
+                <p>실시간 상담</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 공지사항 -->
+      <section class="section section4">
+        <div class="section__inner section4__inner">
+          <p class="section-sub-title">공지사항 과 자주 묻는 질문을 바로 확인해보세요.</p>
+          <h2>공지사항 & 자주묻는 질문</h2>
+
+          <!-- 공지 및 자주묻는 질문 -->
+          <div class="table-tie">
+            <!-- 공지사항 글 노출 5개 까지 되어야함 -->
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <span>공지사항</span>
+                    <a href="#none">+</a>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <span>자율주행 트럭 시범 운영,운송 업계의 변화 시작</span>
+                    <span class="td-date">2024. 09. 11</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span>5세대 이동통신 기술 6G 상용화,초고속 인터넷 시대 개막</span>
+                    <span class="td-date">2024. 09. 02</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span>기업들의 환경 친화적인 신재생 에너지 투자 확대</span>
+                    <span class="td-date">2024. 08. 30</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span>프로토 타입 완성,전기 자동차로 해양을 가로지르는 세계 최장...</span>
+                    <span class="td-date">2024. 08. 09</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span>전 세계에서 폭발적으로 인기를 끈 가상 현실 게임,'넥서스' 출시!</span>
+                    <span class="td-date">2024. 09. 11</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 자주묻는 질문 노출 5개 까지 되어야함 -->
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <span>자주묻는 질문</span>
+                    <a href="#none">+</a>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <span>인공지능 화상 회의 시스템 도입으로 비즈니스 커뮤니케이션 혁신</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span>5G 네트워크로 연결된 스마트 팩토리,생산성과 효율성 급증</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span>프로토 타입 완성,전기 자동차로 해양을 가로지르는 세계 최장 다리 건설 예정</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span>심장 건강을 책임지는 스마트 워치,심박수 감시와 예방 기능 탑재</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span>환경 보호에 기여한 기업,세계 최고 기업 사회적 책임 수상</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 푸터 -->
+      <footer>
+        <div class="footer__inner">
+          <img src="./img/footer_logo.svg" alt="푸터로고" />
+          <ul>
+            <li>
+              <dl>
+                <dt>회사명</dt>
+                <dd>[회사명]</dd>
+              </dl>
+              <dl>
+                <dt>대표</dt>
+                <dd>홍길동</dd>
+              </dl>
+
+              <dl>
+                <dt>사업자번호</dt>
+                <dd>123-12-12345</dd>
+              </dl>
+
+              <dl>
+                <dt>통신판매번호</dt>
+                <dd>2024-서울강남-0212</dd>
+              </dl>
+            </li>
+
+            <li>
+              <dl>
+                <dt>주소</dt>
+                <dd>경기도 안양시 동안구 경수대로 88</dd>
+              </dl>
+
+              <dl>
+                <dt>입금은행</dt>
+                <dd>우리은행</dd>
+              </dl>
+
+              <dl>
+                <dt>입금계좌</dt>
+                <dd>1001-123-323456</dd>
+              </dl>
+            </li>
+
+            <li>
+              <dl>
+                <dt>예금주</dt>
+                <dd>홍길동</dd>
+              </dl>
+
+              <dl>
+                <dt>대표번호</dt>
+                <dd>070-1122-1234</dd>
+              </dl>
+            </li>
+          </ul>
+
+          <div class="terms-privacy-cs-box">
+            <a href="#none">이용약관</a>
+            <a class="privacy-page" href="#none">개인정보처리방침</a>
+            <a href="#none">고객센터</a>
+            <p class="copy-right">© 2024 All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/jq.min.js"></script>
+    <script src="./js/nice.select.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        $('.custom-select').niceSelect();
+      });
+    </script>
   </body>
 </html>
