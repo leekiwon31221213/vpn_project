@@ -1,28 +1,14 @@
 @charset "UTF-8";
-@media (max-width: 1355px) {
-  footer .footer__inner ul li {
-    flex-direction: column;
-  }
-  footer .footer__inner ul li:nth-child(2) {
-    margin: unset;
-  }
-  footer .footer__inner ul li dl {
-    margin-bottom: 8px;
-  }
-}
 @media (min-width: 1025px) {
-  .mo-menu,
-  .footer__inner.mo {
+  .mo-menu {
     display: none;
   }
 }
 @media (max-width: 1024px) {
-  .mo-menu,
-  .footer__inner.mo {
+  .mo-menu {
     display: block;
   }
-  .pc-menu,
-  .footer__inner.pc {
+  .pc-menu {
     display: none;
   }
   .section p.notice {
@@ -203,33 +189,6 @@
   .section4 .section4__inner .table-tie {
     flex-direction: column;
   }
-  footer .footer__inner img {
-    display: none;
-  }
-  footer .footer__inner ul {
-    margin-right: unset;
-  }
-  footer .footer__inner .company-info {
-    margin-bottom: 2rem;
-  }
-  footer .footer__inner .company-info li dl:nth-child(2) {
-    margin-right: unset;
-  }
-  footer .footer__inner .company-info li dl dt {
-    margin: unset 10px unset unset;
-  }
-  footer .footer__inner .company-info li dl:nth-child(1) dd {
-    margin-right: 15px;
-  }
-  footer .footer__inner .company-info li dl:nth-child(2) dd {
-    margin-right: 15px;
-  }
-  footer .footer__inner .company-info li address {
-    margin-bottom: 8px;
-  }
-  footer .footer__inner .terms-privacy-cs-box .copy-right {
-    text-align: unset;
-  }
 }
 @media (max-width: 768px) {
   .section3 {
@@ -237,9 +196,6 @@
   }
   .section3 .section3__inner .counsel-box li a img {
     width: clamp(25px, 4.545vw, 35px);
-  }
-  footer .footer__inner {
-    font-size: clamp(1.4rem, 2.545vw, 1.6rem);
   }
 }
 @media (max-width: 550px) {
@@ -290,8 +246,5 @@
     width: clamp(35px, 4.557vw, 50px);
     margin-right: unset;
     margin-bottom: 10px;
-  }
-  footer .footer__inner {
-    font-size: clamp(1.1rem, 2.75vw, 1.4rem);
   }
 }

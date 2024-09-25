@@ -37,6 +37,65 @@ button.program-down-btn {
 }
 /* // */
 
+/* 메인 */
+main {
+  margin-top: 55px;
+  span.sub-text {
+    font-size: clamp(2.2rem, 2.146vw, 2.4rem);
+    display: flex;
+    align-items: center;
+    color: rgba(243, 243, 243, 1);
+    margin-bottom: 50px;
+
+    &::after {
+      content: '';
+      width: 80px;
+      height: 1px;
+      background-color: rgba(198, 198, 198, 1);
+      margin-left: 20px;
+    }
+  }
+  h1 {
+    font-size: clamp(4.8rem, 4.683vw, 7.2rem);
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -2.5px;
+  }
+  p {
+    font-size: clamp(2.8rem, 2.732vw, 4rem);
+    font-weight: 600;
+    margin-bottom: 80px;
+  }
+  ul {
+    display: flex;
+    li {
+      &:nth-child(1) button {
+        font-size: clamp(2rem, 1.951vw, 2.2rem);
+        margin-right: 20px;
+      }
+      &:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        border-radius: $border-radius;
+        width: clamp(190px, 18.537vw, 225px);
+        height: 72px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: clamp(2rem, 1.951vw, 2.2rem);
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+/* // */
+
 /* 섹션1 박스  */
 
 @mixin price-box($width, $height, $bg-color, $border-radius, $box-shadow, $padding) {
@@ -59,118 +118,7 @@ button.program-down-btn {
 /* // */
 
 // 메인 비주얼
-.header-main-container {
-  width: 100%;
-  height: 688px;
-  background: url(../img/main_bg.svg) no-repeat center center;
-  background-size: cover;
 
-  header,
-  main {
-    max-width: 1550px;
-    width: 90%;
-    margin: 0 auto;
-    color: #fff;
-  }
-  header {
-    height: 140px;
-    nav {
-      ul.login-box {
-        display: flex;
-        justify-content: flex-end;
-        padding: 15px 0;
-        li {
-          &:nth-child(1) {
-            margin-right: 30px;
-          }
-        }
-      }
-
-      ul.logo-menu-box {
-        display: flex;
-        align-items: center;
-        li {
-          &:nth-child(1) {
-            flex: 1;
-          }
-          &:nth-child(2) {
-            font-size: clamp(2rem, 1.951vw, 2.2rem);
-            a {
-              &:nth-child(1) {
-                margin-right: clamp(3rem, 2.927vw, 6rem);
-              }
-              &:nth-child(2) {
-                margin-right: clamp(3rem, 2.927vw, 6rem);
-              }
-            }
-            button {
-              font-size: clamp(1.6rem, 1.561vw, 1.8rem);
-              width: clamp(160px, 15.61vw, 183px);
-              height: 53px;
-              border-radius: 6px;
-            }
-          }
-        }
-      }
-    }
-  }
-  main {
-    margin-top: 55px;
-    span.sub-text {
-      font-size: clamp(2.2rem, 2.146vw, 2.4rem);
-      display: flex;
-      align-items: center;
-      color: rgba(243, 243, 243, 1);
-      margin-bottom: 50px;
-
-      &::after {
-        content: '';
-        width: 80px;
-        height: 1px;
-        background-color: rgba(198, 198, 198, 1);
-        margin-left: 20px;
-      }
-    }
-    h1 {
-      font-size: clamp(4.8rem, 4.683vw, 7.2rem);
-      font-weight: 600;
-      margin-bottom: 20px;
-      letter-spacing: -2.5px;
-    }
-    p {
-      font-size: clamp(2.8rem, 2.732vw, 4rem);
-      font-weight: 600;
-      margin-bottom: 80px;
-    }
-    ul {
-      display: flex;
-      li {
-        &:nth-child(1) button {
-          font-size: clamp(2rem, 1.951vw, 2.2rem);
-          margin-right: 20px;
-        }
-        &:nth-child(2) {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid #fff;
-          border-radius: $border-radius;
-          width: clamp(190px, 18.537vw, 225px);
-          height: 72px;
-          a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: clamp(2rem, 1.951vw, 2.2rem);
-            img {
-              margin-right: 10px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
 /* // */
 
 //섹션공통
@@ -436,75 +384,4 @@ button.program-down-btn {
     }
   }
 }
-/* // */
-
-//푸터
-footer {
-  width: 100%;
-  background-color: rgba(24, 25, 33, 1);
-  height: 100%;
-  min-height: 180px;
-  img {
-    margin-right: 60px;
-  }
-
-  .footer__inner {
-    display: flex;
-    max-width: 1550px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 45px 0;
-    color: rgba(255, 255, 255, 0.8);
-    ul {
-      margin-right: 95px;
-      li {
-        display: flex;
-        &:nth-child(2) {
-          margin: 8px auto;
-        }
-        dl {
-          @for $i from 1 through 3 {
-            &:nth-child(#{$i}) {
-              margin-right: 20px;
-            }
-            dt {
-              margin-right: 5px;
-            }
-          }
-          display: flex;
-        }
-      }
-    }
-
-    .terms-privacy-cs-box {
-      a {
-        width: unset;
-        margin-bottom: 25px;
-        display: inline-block;
-        &:nth-child(2) {
-          &::before {
-            content: '';
-            width: 1px;
-            height: 13px;
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 0 10px;
-            display: inline-block;
-          }
-          &::after {
-            content: '';
-            width: 1px;
-            height: 13px;
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 0 10px;
-            display: inline-block;
-          }
-        }
-      }
-      .copy-right {
-        text-align: right;
-      }
-    }
-  }
-}
-
 /* // */

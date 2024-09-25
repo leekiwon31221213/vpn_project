@@ -1,34 +1,13 @@
-@media (max-width: 1355px) {
-  footer {
-    .footer__inner {
-      ul {
-        li {
-          flex-direction: column;
-          &:nth-child(2) {
-            margin: unset;
-          }
-          dl {
-            margin-bottom: 8px;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (min-width: 1025px) {
-  .mo-menu,
-  .footer__inner.mo {
+  .mo-menu {
     display: none;
   }
 }
 @media (max-width: 1024px) {
-  .mo-menu,
-  .footer__inner.mo {
+  .mo-menu {
     display: block;
   }
-  .pc-menu,
-  .footer__inner.pc {
+  .pc-menu {
     display: none;
   }
   .section p.notice {
@@ -250,49 +229,6 @@
       }
     }
   }
-  //푸터
-  footer {
-    .footer__inner {
-      img {
-        display: none;
-      }
-      ul {
-        margin-right: unset;
-      }
-
-      .company-info {
-        margin-bottom: 2rem;
-
-        li {
-          dl {
-            &:nth-child(2) {
-              margin-right: unset;
-            }
-            dt {
-              margin: unset 10px unset unset;
-            }
-            @for $i from 1 through 2 {
-              &:nth-child(#{$i}) {
-                dd {
-                  margin-right: 15px;
-                }
-              }
-            }
-          }
-
-          address {
-            margin-bottom: 8px;
-          }
-        }
-      }
-
-      .terms-privacy-cs-box {
-        .copy-right {
-          text-align: unset;
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 768px) {
@@ -308,11 +244,6 @@
           }
         }
       }
-    }
-  }
-  footer {
-    .footer__inner {
-      font-size: clamp(1.4rem, 2.545vw, 1.6rem);
     }
   }
 }
@@ -377,12 +308,6 @@
           }
         }
       }
-    }
-  }
-
-  footer {
-    .footer__inner {
-      font-size: clamp(1.1rem, 2.75vw, 1.4rem);
     }
   }
 }

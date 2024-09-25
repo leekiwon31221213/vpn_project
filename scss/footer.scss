@@ -1,0 +1,161 @@
+//푸터
+footer {
+  width: 100%;
+  background-color: rgba(24, 25, 33, 1);
+  height: 100%;
+  min-height: 180px;
+  img {
+    margin-right: 60px;
+  }
+
+  .footer__inner {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1550px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 45px 0;
+    color: rgba(255, 255, 255, 0.8);
+    ul {
+      margin-right: 95px;
+      li {
+        display: flex;
+        &:nth-child(2) {
+          margin: 8px auto;
+        }
+        dl {
+          @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+              margin-right: 20px;
+            }
+            dt {
+              margin-right: 5px;
+            }
+          }
+          display: flex;
+        }
+      }
+    }
+
+    .terms-privacy-cs-box {
+      a {
+        width: unset;
+        margin-bottom: 25px;
+        display: inline-block;
+        &:nth-child(2) {
+          &::before {
+            content: '';
+            width: 1px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 0 10px;
+            display: inline-block;
+          }
+          &::after {
+            content: '';
+            width: 1px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 0 10px;
+            display: inline-block;
+          }
+        }
+      }
+      .copy-right {
+        text-align: right;
+      }
+    }
+  }
+}
+
+/* // */
+
+@media (max-width: 1355px) {
+  footer {
+    .footer__inner {
+      ul {
+        li {
+          flex-direction: column;
+          &:nth-child(2) {
+            margin: unset;
+          }
+          dl {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .footer__inner.mo {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__inner.mo {
+    display: block;
+  }
+  .footer__inner.pc {
+    display: none;
+  }
+  //푸터
+  footer {
+    .footer__inner {
+      img {
+        display: none;
+      }
+      ul {
+        margin-right: unset;
+      }
+
+      .company-info {
+        margin-bottom: 2rem;
+
+        li {
+          dl {
+            &:nth-child(2) {
+              margin-right: unset;
+            }
+            dt {
+              margin: unset 10px unset unset;
+            }
+            @for $i from 1 through 2 {
+              &:nth-child(#{$i}) {
+                dd {
+                  margin-right: 15px;
+                }
+              }
+            }
+          }
+
+          address {
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      .terms-privacy-cs-box {
+        .copy-right {
+          text-align: unset;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer__inner {
+      font-size: clamp(1.4rem, 2.545vw, 1.6rem);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  footer {
+    .footer__inner {
+      font-size: clamp(1.1rem, 2.75vw, 1.4rem);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@media (max-width: 1024px) {
+  .section1 .section1__inner form {
+    width: unset;
+  }
+  .section1 .section1__inner form input {
+    max-width: unset;
+  }
+  .section3 {
+    border-radius: unset;
+    margin-bottom: unset;
+  }
+}

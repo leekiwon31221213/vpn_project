@@ -32,6 +32,12 @@
   display: block;
 }
 
+.select-box.id-search {
+  width: 120px;
+  height: 55px;
+  line-height: 55px;
+  margin-right: 10px;
+}
 .select-box.select-box.exchange-select-order-rate {
   max-width: 105px;
 }
@@ -115,6 +121,10 @@
   height: 200px;
   overflow-y: auto;
   width: 189px;
+}
+
+.select-box.id-search .list {
+  max-width: 120px;
 }
 
 .partnership-inquiry .select-box.exchange-select-order-rate .list {
