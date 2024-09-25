@@ -160,6 +160,7 @@ button.program-down-btn {
           a {
             display: flex;
             align-items: center;
+            justify-content: center;
             font-size: clamp(2rem, 1.951vw, 2.2rem);
             img {
               margin-right: 10px;
@@ -212,6 +213,7 @@ button.program-down-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     &::before {
       content: '!';
       width: 20px;
@@ -366,6 +368,7 @@ button.program-down-btn {
         a {
           display: flex;
           align-items: center;
+          justify-content: center;
           img {
             margin-right: 10px;
           }
@@ -404,6 +407,9 @@ button.program-down-btn {
             th {
               display: flex;
               justify-content: space-between;
+              a {
+                width: unset;
+              }
             }
           }
         }
@@ -414,14 +420,14 @@ button.program-down-btn {
               justify-content: space-between;
               align-items: center;
               padding: 10px;
-              font-size: 1.5rem;
+              font-size: clamp(1.4rem, 1.366vw, 1.6rem);
               @for $i from 1 through 4 {
                 &:nth-child(#{$i}) {
                   border-bottom: 1px solid #ccc;
                 }
-                .td-date {
-                  padding-left: 10px;
-                }
+              }
+              .td-date {
+                padding-left: 10px;
               }
             }
           }
@@ -450,7 +456,7 @@ footer {
     padding: 45px 0;
     color: rgba(255, 255, 255, 0.8);
     ul {
-      margin-right: 145px;
+      margin-right: 95px;
       li {
         display: flex;
         &:nth-child(2) {
@@ -461,6 +467,9 @@ footer {
             &:nth-child(#{$i}) {
               margin-right: 20px;
             }
+            dt {
+              margin-right: 5px;
+            }
           }
           display: flex;
         }
@@ -469,6 +478,7 @@ footer {
 
     .terms-privacy-cs-box {
       a {
+        width: unset;
         margin-bottom: 25px;
         display: inline-block;
         &:nth-child(2) {

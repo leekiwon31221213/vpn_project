@@ -1,0 +1,388 @@
+@media (max-width: 1355px) {
+  footer {
+    .footer__inner {
+      ul {
+        li {
+          flex-direction: column;
+          &:nth-child(2) {
+            margin: unset;
+          }
+          dl {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .mo-menu,
+  .footer__inner.mo {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .mo-menu,
+  .footer__inner.mo {
+    display: block;
+  }
+  .pc-menu,
+  .footer__inner.pc {
+    display: none;
+  }
+  .section p.notice {
+    font-size: clamp(1.4rem, 2.545vw, 2rem);
+  }
+  .section p.notice::before {
+    margin-right: unset;
+    margin-top: 40px;
+    position: absolute;
+    top: -15px;
+  }
+  .section .section__inner p.section-sub-title {
+    font-size: clamp(1.6rem, 2.909vw, 2.2rem);
+  }
+  .section .section__inner h2 {
+    font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+  }
+  //헤더,메인
+  .header-main-container {
+    header {
+      width: 100%;
+      background-color: #fff;
+      height: 80px;
+      border-radius: 0 0 30px 30px;
+      .mo-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        nav {
+          width: 90%;
+          margin: 0 auto;
+          .logo-menu-box {
+            justify-content: space-between;
+          }
+
+          .login-box {
+            color: rgba(0, 0, 0, 0.7);
+            justify-content: unset;
+            font-weight: 600;
+          }
+          .menu-box {
+            color: #333;
+            margin-top: 9rem;
+            li {
+              font-size: 2rem;
+              font-weight: 600;
+
+              button.program-down-btn {
+                font-size: 2rem;
+
+                width: unset;
+                height: unset;
+                color: unset;
+                background-color: unset;
+                border-radius: unset;
+                font-weight: unset;
+              }
+              &:nth-child(2) {
+                margin: 30px auto;
+              }
+            }
+          }
+          li {
+            &:nth-child(1) {
+              flex: unset;
+            }
+            /* 햄버거 메뉴 */
+            .trigger {
+              position: relative;
+              top: 50%;
+              right: 20px;
+              transform: translate(0, -50%);
+              cursor: pointer;
+              height: 30px;
+              width: 30px;
+              z-index: 3;
+            }
+            .trigger span {
+              position: absolute;
+              width: 100%;
+              max-width: 30px;
+              height: 2px;
+              background-color: #333;
+              transition: 0.3s;
+            }
+
+            .trigger span:nth-child(1) {
+              top: 20px;
+            }
+            .trigger span:nth-child(2) {
+              top: 30px;
+            }
+            .trigger span:nth-child(3) {
+              top: 40px;
+            }
+
+            .trigger.active span:nth-child(1) {
+              transform: rotate(45deg);
+              top: 30px;
+            }
+
+            .trigger.active span:nth-child(2) {
+              opacity: 0;
+            }
+
+            .trigger.active span:nth-child(3) {
+              transform: rotate(-45deg);
+              top: 30px;
+            }
+          }
+        }
+      }
+
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      .modal-content {
+        position: fixed;
+        z-index: 2;
+        right: -100%; //-100%
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transition: right 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+      }
+
+      .modal-content.active {
+        right: 0;
+        opacity: 1;
+        padding: 20px;
+      }
+
+      .overlay.active {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    //메인
+    main {
+      text-align: center;
+      margin: 140px auto auto auto;
+      span.sub-text {
+        font-size: clamp(1.9rem, 2.474vw, 2.2rem);
+        justify-content: center;
+        &::after {
+          display: none;
+        }
+      }
+      h1 {
+        font-size: clamp(4.1rem, 5.339vw, 4.8rem);
+      }
+      p {
+        font-size: clamp(2.4rem, 3.125vw, 2.8rem);
+        font-weight: unset;
+      }
+      ul {
+        justify-content: center;
+        li {
+          &:nth-child(1) button {
+            font-size: clamp(1.6rem, 2.083vw, 2rem);
+          }
+          &:nth-child(2) a {
+            font-size: clamp(1.6rem, 2.083vw, 2rem);
+            img {
+              width: clamp(25px, 3.255vw, 32px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //섹션1
+  .section1 {
+    .section1__inner {
+      .month-contract-box {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  //섹션2
+  //섹션3
+  .section3 {
+    border-radius: unset;
+    margin-bottom: 60px;
+    .section3__inner {
+      .counsel-box {
+        li {
+          a {
+            img {
+              width: clamp(35px, 4.557vw, 50px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //섹션4
+  .section4 {
+    .section4__inner {
+      .table-tie {
+        flex-direction: column;
+      }
+    }
+  }
+  //푸터
+  footer {
+    .footer__inner {
+      img {
+        display: none;
+      }
+      ul {
+        margin-right: unset;
+      }
+
+      .company-info {
+        margin-bottom: 2rem;
+
+        li {
+          dl {
+            &:nth-child(2) {
+              margin-right: unset;
+            }
+            dt {
+              margin: unset 10px unset unset;
+            }
+            @for $i from 1 through 2 {
+              &:nth-child(#{$i}) {
+                dd {
+                  margin-right: 15px;
+                }
+              }
+            }
+          }
+
+          address {
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      .terms-privacy-cs-box {
+        .copy-right {
+          text-align: unset;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section3 {
+    border-radius: unset;
+    .section3__inner {
+      .counsel-box {
+        li {
+          a {
+            img {
+              width: clamp(25px, 4.545vw, 35px);
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer__inner {
+      font-size: clamp(1.4rem, 2.545vw, 1.6rem);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  //헤더 메인
+  .header-main-container {
+    main {
+      span.sub-text {
+        font-size: clamp(1.6rem, 4vw, 1.9rem);
+      }
+      h1 {
+        font-size: clamp(3rem, 7.5vw, 4.1rem);
+      }
+      p {
+        font-size: clamp(1.9rem, 4.75vw, 2.4rem);
+      }
+      ul {
+        li {
+          width: 100%;
+          &:nth-child(1) {
+            margin-right: 10px;
+          }
+          &:nth-child(1) button {
+            width: 100%;
+            margin-right: unset;
+            font-size: clamp(1.5rem, 3.5vw, 1.6rem);
+            height: clamp(60px, 15vw, 70px);
+          }
+          &:nth-child(2) {
+            width: 100%;
+            height: clamp(60px, 15vw, 70px);
+            a {
+              font-size: clamp(1.5rem, 3.5vw, 1.6rem);
+              img {
+                width: clamp(20px, 5vw, 25px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //섹션3
+  .section3 {
+    border-radius: unset;
+    .section3__inner {
+      .counsel-box {
+        li {
+          max-width: 100px;
+          height: 93px;
+          a {
+            flex-direction: column;
+            justify-content: center;
+            font-size: clamp(1.4rem, 1.366vw, 1.6rem);
+            img {
+              width: clamp(35px, 4.557vw, 50px);
+              margin-right: unset;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer__inner {
+      font-size: clamp(1.1rem, 2.75vw, 1.4rem);
+    }
+  }
+}

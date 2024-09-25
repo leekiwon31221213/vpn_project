@@ -126,6 +126,7 @@ button.program-down-btn {
 .header-main-container main ul li:nth-child(2) a {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: clamp(2rem, 1.951vw, 2.2rem);
 }
 .header-main-container main ul li:nth-child(2) a img {
@@ -169,6 +170,7 @@ button.program-down-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .section p.notice::before {
   content: "!";
@@ -304,6 +306,7 @@ button.program-down-btn {
 .section3 .section3__inner .counsel-box li a {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .section3 .section3__inner .counsel-box li a img {
   margin-right: 10px;
@@ -337,30 +340,24 @@ button.program-down-btn {
   display: flex;
   justify-content: space-between;
 }
+.section4 .section4__inner .table-tie table thead tr th a {
+  width: unset;
+}
 .section4 .section4__inner .table-tie table tbody tr td {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: clamp(1.4rem, 1.366vw, 1.6rem);
 }
 .section4 .section4__inner .table-tie table tbody tr td:nth-child(1) {
   border-bottom: 1px solid #ccc;
 }
-.section4 .section4__inner .table-tie table tbody tr td .td-date {
-  padding-left: 10px;
-}
 .section4 .section4__inner .table-tie table tbody tr td:nth-child(2) {
   border-bottom: 1px solid #ccc;
 }
-.section4 .section4__inner .table-tie table tbody tr td .td-date {
-  padding-left: 10px;
-}
 .section4 .section4__inner .table-tie table tbody tr td:nth-child(3) {
   border-bottom: 1px solid #ccc;
-}
-.section4 .section4__inner .table-tie table tbody tr td .td-date {
-  padding-left: 10px;
 }
 .section4 .section4__inner .table-tie table tbody tr td:nth-child(4) {
   border-bottom: 1px solid #ccc;
@@ -388,7 +385,7 @@ footer .footer__inner {
   color: rgba(255, 255, 255, 0.8);
 }
 footer .footer__inner ul {
-  margin-right: 145px;
+  margin-right: 95px;
 }
 footer .footer__inner ul li {
   display: flex;
@@ -402,13 +399,23 @@ footer .footer__inner ul li dl {
 footer .footer__inner ul li dl:nth-child(1) {
   margin-right: 20px;
 }
+footer .footer__inner ul li dl dt {
+  margin-right: 5px;
+}
 footer .footer__inner ul li dl:nth-child(2) {
   margin-right: 20px;
+}
+footer .footer__inner ul li dl dt {
+  margin-right: 5px;
 }
 footer .footer__inner ul li dl:nth-child(3) {
   margin-right: 20px;
 }
+footer .footer__inner ul li dl dt {
+  margin-right: 5px;
+}
 footer .footer__inner .terms-privacy-cs-box a {
+  width: unset;
   margin-bottom: 25px;
   display: inline-block;
 }

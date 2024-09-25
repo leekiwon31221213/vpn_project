@@ -6,6 +6,7 @@
     <title>vpn</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/nice.select.css" />
   </head>
   <body>
@@ -13,25 +14,74 @@
       <!-- 메인 비주얼 -->
       <div class="header-main-container">
         <header>
-          <nav>
-            <!-- 로그인 -->
-            <ul class="login-box">
-              <li><a href="#none">로그인</a></li>
-              <li><a href="#none">회원가임</a></li>
-            </ul>
-            <!-- 메뉴 -->
-            <ul class="logo-menu-box">
-              <li>
-                <a href="#none"><img src="./img/logo.svg" alt="헤더 로고" /></a>
-              </li>
+          <!-- PC 메뉴 -->
+          <div class="pc-menu">
+            <nav>
+              <!-- 로그인 -->
+              <ul class="login-box">
+                <li><a href="#none">로그인</a></li>
+                <li><a href="#none">회원가입</a></li>
+              </ul>
+              <!-- 메뉴 -->
+              <ul class="logo-menu-box">
+                <li>
+                  <a href="#none"><img src="./img/logo.svg" alt="헤더 로고" /></a>
+                </li>
+                <li>
+                  <a href="#none">고객센터</a>
+                  <a href="#none">VPN 사용방법</a>
+                  <button type="button" class="program-down-btn">프로그램 다운로드</button>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-              <li>
-                <a href="#none">고객센터</a>
-                <a href="#none">VPN 사용방법</a>
-                <button type="button" class="program-down-btn">프로그램 다운로드</button>
-              </li>
-            </ul>
-          </nav>
+          <!-- 모바일 메뉴 -->
+          <div class="mo-menu">
+            <nav>
+              <!-- 메뉴 -->
+              <ul class="logo-menu-box">
+                <li>
+                  <a href="#none"><img src="./img/mo_logo.svg" alt="모바일 헤더 로고" /></a>
+                </li>
+                <li>
+                  <div class="trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <!-- 메뉴 모달 -->
+            <div class="menu-modal">
+              <div class="overlay"></div>
+              <nav class="modal-content">
+                <!-- 로그인 -->
+                <ul class="login-box">
+                  <li><a href="#none">로그인</a></li>
+                  <li><a href="#none">회원가입</a></li>
+                </ul>
+                <!-- 메뉴 -->
+                <ul class="menu-box">
+                  <li>
+                    <button type="button" class="program-down-btn">프로그램 다운로드</button>
+                  </li>
+
+                  <li>
+                    <a href="#none">
+                      <span>고객센터</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none">
+                      <span>VPN 사용방법</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </header>
 
         <main>
@@ -217,35 +267,35 @@
                 <tr>
                   <td>
                     <span>자율주행 트럭 시범 운영,운송 업계의 변화 시작</span>
-                    <span class="td-date">2024. 09. 11</span>
+                    <span class="td-date">24.09.11</span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
                     <span>5세대 이동통신 기술 6G 상용화,초고속 인터넷 시대 개막</span>
-                    <span class="td-date">2024. 09. 02</span>
+                    <span class="td-date">24.09.02</span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
                     <span>기업들의 환경 친화적인 신재생 에너지 투자 확대</span>
-                    <span class="td-date">2024. 08. 30</span>
+                    <span class="td-date">24.08.30</span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
                     <span>프로토 타입 완성,전기 자동차로 해양을 가로지르는 세계 최장...</span>
-                    <span class="td-date">2024. 08. 09</span>
+                    <span class="td-date">24.08.09</span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
                     <span>전 세계에서 폭발적으로 인기를 끈 가상 현실 게임,'넥서스' 출시!</span>
-                    <span class="td-date">2024. 09. 11</span>
+                    <span class="td-date">24.09.11</span>
                   </td>
                 </tr>
               </tbody>
@@ -300,7 +350,7 @@
 
       <!-- 푸터 -->
       <footer>
-        <div class="footer__inner">
+        <div class="footer__inner pc">
           <img src="./img/footer_logo.svg" alt="푸터로고" />
           <ul>
             <li>
@@ -361,11 +411,71 @@
             <p class="copy-right">© 2024 All Rights Reserved.</p>
           </div>
         </div>
+
+        <div class="footer__inner mo">
+          <img src="./img/footer_logo.svg" alt="푸터로고" />
+          <ul class="company-info">
+            <li>
+              <!-- 회사,CEO -->
+              <dl>
+                <dt>회사명:</dt>
+                <dd>[회사명]</dd>
+
+                <dt>대표:</dt>
+                <dd>홍길동</dd>
+              </dl>
+
+              <!-- 판매 번호 -->
+              <dl>
+                <dt>사업자번호:</dt>
+                <dd>123-12-12345</dd>
+
+                <dt>통신판매번호:</dt>
+                <dd>2024-서울강남-0212</dd>
+              </dl>
+            </li>
+
+            <!-- 주소 -->
+            <li>
+              <address>
+                <p>주소: 경기도 안양시 동안구 경수대로 88</p>
+              </address>
+            </li>
+
+            <!-- 은행 -->
+            <li>
+              <dl>
+                <dt>입금은행:</dt>
+                <dd>우리은행</dd>
+
+                <dt>입금계좌:</dt>
+                <dd>1001-123-323456</dd>
+              </dl>
+            </li>
+
+            <li>
+              <dl>
+                <dt>예금주:</dt>
+                <dd>홍길동</dd>
+                <dt>대표번호:</dt>
+                <dd>070-1122-1234</dd>
+              </dl>
+            </li>
+          </ul>
+
+          <div class="terms-privacy-cs-box">
+            <a href="#none">이용약관</a>
+            <a class="privacy-page" href="#none">개인정보처리방침</a>
+            <a href="#none">고객센터</a>
+            <p class="copy-right">© 2024 All Rights Reserved.</p>
+          </div>
+        </div>
       </footer>
     </div>
 
     <script src="./js/jq.min.js"></script>
     <script src="./js/nice.select.js"></script>
+    <script src="./js/menu.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         $('.custom-select').niceSelect();
