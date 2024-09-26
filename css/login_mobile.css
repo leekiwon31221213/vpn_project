@@ -1,4 +1,7 @@
 @media (max-width: 1024px) {
+  .section .section__inner h2 {
+    font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+  }
   .section1 .section1__inner form {
     width: unset;
   }
@@ -8,5 +11,27 @@
   .section3 {
     border-radius: unset;
     margin-bottom: unset;
+  }
+  .section3 .section3__inner p.section-sub-title {
+    font-size: clamp(1.6rem, 2.909vw, 2.2rem);
+  }
+  .section3 .section3__inner .counsel-box li a img {
+    width: clamp(35px, 4.557vw, 50px);
+  }
+}
+@media (max-width: 550px) {
+  .section3 .section3__inner .counsel-box li {
+    max-width: 100px;
+    height: 93px;
+  }
+  .section3 .section3__inner .counsel-box li a {
+    flex-direction: column;
+    justify-content: center;
+    font-size: clamp(1.4rem, 1.366vw, 1.6rem);
+  }
+  .section3 .section3__inner .counsel-box li a img {
+    width: clamp(35px, 4.557vw, 50px);
+    margin-right: unset;
+    margin-bottom: 10px;
   }
 }

@@ -1,6 +1,8 @@
 @media (max-width: 1024px) {
-  .header-main-container {
+  .section .section__inner h2 {
+    font-size: clamp(2.8rem, 5.091vw, 3.5rem);
   }
+
   .section1 {
     .section1__inner {
       form {
@@ -15,5 +17,43 @@
   .section3 {
     border-radius: unset;
     margin-bottom: unset;
+    .section3__inner {
+      p.section-sub-title {
+        font-size: clamp(1.6rem, 2.909vw, 2.2rem);
+      }
+      .counsel-box {
+        li {
+          a {
+            img {
+              width: clamp(35px, 4.557vw, 50px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  //섹션3
+  .section3 {
+    .section3__inner {
+      .counsel-box {
+        li {
+          max-width: 100px;
+          height: 93px;
+          a {
+            flex-direction: column;
+            justify-content: center;
+            font-size: clamp(1.4rem, 1.366vw, 1.6rem);
+            img {
+              width: clamp(35px, 4.557vw, 50px);
+              margin-right: unset;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }

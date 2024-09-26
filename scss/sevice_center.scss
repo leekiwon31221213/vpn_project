@@ -1,0 +1,184 @@
+$input-border: 1px solid rgba(0, 0, 0, 0.15);
+$main-color: rgba(55, 83, 225, 1);
+
+input {
+  border: $input-border;
+  padding: 10px 20px;
+}
+
+@mixin service_btn($width, $height, $line-height, $background, $color, $text-align, $border-radius) {
+  max-width: $width;
+  height: $height;
+  line-height: $line-height;
+  background-color: $background;
+  color: $color;
+  text-align: $text-align;
+  border-radius: $border-radius;
+}
+.header-main-container {
+  height: 400px;
+
+  position: relative;
+  &::before {
+    content: '고객센터';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    font-size: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.my-page-menu-box {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  .my-page-menu__inner {
+    max-width: 1550px;
+    margin: 0 auto;
+    height: 100%;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: inherit;
+      text-align: center;
+      li {
+        width: calc(100% / 4);
+        max-width: 140px;
+        height: 60px;
+        line-height: 60px;
+        color: #fff;
+        transition: 0.3s;
+        a {
+          width: 100%;
+          display: inline-block;
+        }
+      }
+      li.active {
+        background-color: #fff;
+        color: rgb(55, 83, 225);
+        box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.2);
+        border: 1px solid #ccc;
+        transform: scale(1.03);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.section1 {
+  background-color: unset;
+  margin-top: 105px;
+
+  .section1__inner {
+    .notice-box {
+      display: flex;
+      justify-content: space-evenly;
+
+      h3 {
+        margin-bottom: 6rem;
+        color: #333;
+        font-weight: 600;
+        font-size: 2.8rem;
+      }
+
+      /* 공지사항 */
+
+      .notice-detail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        table {
+          width: 100%;
+
+          thead {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            vertical-align: middle;
+            background-color: rgba(247, 247, 247, 1);
+            border-bottom: 1px solid #ccc;
+            border-top: 2px solid $main-color;
+          }
+          tbody {
+            tr {
+              border-bottom: 1px solid #ccc;
+
+              td {
+                padding: 20px 5px;
+                &:nth-child(2) {
+                  text-align: left;
+                }
+                strong {
+                  color: $main-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      .write-btn {
+        text-align: right;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        a {
+          @include service_btn(105px, 50px, 50px, #333, #fff, center, 6px);
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          font-weight: 600;
+          margin: 0 1.3rem;
+        }
+        li.prev {
+          margin-right: 2rem;
+        }
+        li.next {
+          margin-left: 2rem;
+        }
+        li.active {
+          color: #fff;
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+          background-color: $main-color;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .search-box {
+      margin-top: 4rem;
+      input {
+        width: 250px;
+        height: 50px;
+      }
+      .search-btn {
+        width: 100%;
+        @include service_btn(105px, 50px, 50px, #333, #fff, center, 6px);
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.mypage-container.notice {
+  .section1 {
+    margin: 105px auto;
+  }
+}

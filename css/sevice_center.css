@@ -1,0 +1,168 @@
+@charset "UTF-8";
+input {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+}
+
+.header-main-container {
+  height: 400px;
+  position: relative;
+}
+.header-main-container::before {
+  content: "고객센터";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  font-size: 3.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-page-menu-box {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.my-page-menu-box .my-page-menu__inner {
+  max-width: 1550px;
+  margin: 0 auto;
+  height: 100%;
+}
+.my-page-menu-box .my-page-menu__inner ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  text-align: center;
+}
+.my-page-menu-box .my-page-menu__inner ul li {
+  width: 25%;
+  max-width: 140px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  transition: 0.3s;
+}
+.my-page-menu-box .my-page-menu__inner ul li a {
+  width: 100%;
+  display: inline-block;
+}
+.my-page-menu-box .my-page-menu__inner ul li.active {
+  background-color: #fff;
+  color: rgb(55, 83, 225);
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  transform: scale(1.03);
+  font-weight: 600;
+}
+
+.section1 {
+  background-color: unset;
+  margin-top: 105px;
+}
+.section1 .section1__inner .notice-box {
+  display: flex;
+  justify-content: space-evenly;
+  /* 공지사항 */
+}
+.section1 .section1__inner .notice-box h3 {
+  margin-bottom: 6rem;
+  color: #333;
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+.section1 .section1__inner .notice-box .notice-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section1 .section1__inner .notice-box .notice-detail table {
+  width: 100%;
+}
+.section1 .section1__inner .notice-box .notice-detail table thead {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  background-color: rgb(247, 247, 247);
+  border-bottom: 1px solid #ccc;
+  border-top: 2px solid rgb(55, 83, 225);
+}
+.section1 .section1__inner .notice-box .notice-detail table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+.section1 .section1__inner .notice-box .notice-detail table tbody tr td {
+  padding: 20px 5px;
+}
+.section1 .section1__inner .notice-box .notice-detail table tbody tr td:nth-child(2) {
+  text-align: left;
+}
+.section1 .section1__inner .notice-box .notice-detail table tbody tr td strong {
+  color: rgb(55, 83, 225);
+}
+.section1 .section1__inner .notice-box .write-btn {
+  text-align: right;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.section1 .section1__inner .notice-box .write-btn a {
+  max-width: 105px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+.section1 .section1__inner .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .section1__inner .pagination ul {
+  display: flex;
+  align-items: center;
+}
+.section1 .section1__inner .pagination ul li {
+  font-weight: 600;
+  margin: 0 1.3rem;
+}
+.section1 .section1__inner .pagination ul li.prev {
+  margin-right: 2rem;
+}
+.section1 .section1__inner .pagination ul li.next {
+  margin-left: 2rem;
+}
+.section1 .section1__inner .pagination ul li.active {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background-color: rgb(55, 83, 225);
+  border-radius: 50%;
+}
+.section1 .section1__inner .search-box {
+  margin-top: 4rem;
+}
+.section1 .section1__inner .search-box input {
+  width: 250px;
+  height: 50px;
+}
+.section1 .section1__inner .search-box .search-btn {
+  width: 100%;
+  max-width: 105px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
+
+.mypage-container.notice .section1 {
+  margin: 105px auto;
+}

@@ -1,0 +1,90 @@
+@media (max-width: 1024px) {
+  .section .section__inner h2 {
+    font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+  }
+  .section1 .section1__inner .info-payment-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section1 .section1__inner .info-payment-box h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .section1 .section1__inner .info-payment-box .user-info {
+    width: 100%;
+  }
+  .section1 .section1__inner .info-payment-box .user-info ul {
+    margin: 0 auto;
+  }
+  .section1 .section1__inner .info-payment-box .user-payment-detail {
+    width: 100%;
+  }
+  .section1 .section1__inner .info-payment-box .user-payment-detail h3 {
+    margin-top: 5rem;
+  }
+  .section1 .section1__inner .pagination ul li {
+    margin: 0 1rem;
+  }
+  .section1 .section1__inner .modify-form {
+    width: 90%;
+  }
+  .section3 {
+    border-radius: unset;
+    margin-bottom: unset;
+  }
+  .section3 .section3__inner p.section-sub-title {
+    font-size: clamp(1.6rem, 2.909vw, 2.2rem);
+  }
+  .section3 .section3__inner .counsel-box li a img {
+    width: clamp(35px, 4.557vw, 50px);
+  }
+}
+@media (max-width: 768px) {
+  .section1 .section1__inner .info-payment-box .user-info ul,
+  .section1 .section1__inner .user-inquire .user-info ul {
+    font-size: clamp(1.4rem, 2.545vw, 1.6rem);
+    padding: clamp(20px, 3.636vw, 40px);
+  }
+  .section1 .section1__inner .info-payment-box .user-payment-detail table thead th,
+  .section1 .section1__inner .info-payment-box .user-inquire-detail table thead th,
+  .section1 .section1__inner .user-inquire .user-payment-detail table thead th,
+  .section1 .section1__inner .user-inquire .user-inquire-detail table thead th {
+    font-size: clamp(1.5rem, 2.727vw, 1.6rem);
+  }
+  .section1 .section1__inner .info-payment-box .user-payment-detail table tbody td,
+  .section1 .section1__inner .info-payment-box .user-inquire-detail table tbody td,
+  .section1 .section1__inner .user-inquire .user-payment-detail table tbody td,
+  .section1 .section1__inner .user-inquire .user-inquire-detail table tbody td {
+    font-size: clamp(1.5rem, 2.727vw, 1.6rem);
+  }
+}
+@media (max-width: 550px) {
+  .my-page-menu-box .my-page-menu__inner ul li {
+    width: clamp(100px, 25vw, 137px);
+    font-size: clamp(1.4rem, 2.545vw, 1.6rem);
+  }
+  .section1 .section1__inner .info-payment-box h3,
+  .section1 .section1__inner .user-inquire h3 {
+    font-size: 2.5rem;
+  }
+  .section1 .section1__inner .info-payment-box .user-payment-detail table tbody td,
+  .section1 .section1__inner .info-payment-box .user-inquire-detail table tbody td,
+  .section1 .section1__inner .user-inquire .user-payment-detail table tbody td,
+  .section1 .section1__inner .user-inquire .user-inquire-detail table tbody td {
+    font-size: clamp(1.4rem, 3.5vw, 1.5rem);
+  }
+  .section3 .section3__inner .counsel-box li {
+    max-width: 100px;
+    height: 93px;
+  }
+  .section3 .section3__inner .counsel-box li a {
+    flex-direction: column;
+    justify-content: center;
+    font-size: clamp(1.4rem, 1.366vw, 1.6rem);
+  }
+  .section3 .section3__inner .counsel-box li a img {
+    width: clamp(35px, 4.557vw, 50px);
+    margin-right: unset;
+    margin-bottom: 10px;
+  }
+}
