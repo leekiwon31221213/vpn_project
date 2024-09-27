@@ -231,7 +231,7 @@ main ul li:nth-child(2) a img {
 .section2 .section2__inner .section2-contents span {
   font-size: 1.7rem;
   line-height: 2.3rem;
-  margin-bottom: 70px;
+  margin-bottom: 4rem;
   display: inline-block;
 }
 .section2 .section2__inner.active {
