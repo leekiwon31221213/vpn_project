@@ -1,0 +1,232 @@
+@charset "UTF-8";
+input {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 55px;
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+.header-main-container {
+  height: 400px;
+  position: relative;
+}
+.header-main-container::before {
+  content: "회원가입";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  font-size: 3.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.procedure-box {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.procedure-box .procedure__inner {
+  max-width: 1550px;
+  margin: 0 auto;
+  height: 100%;
+}
+.procedure-box .procedure__inner ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  text-align: center;
+}
+.procedure-box .procedure__inner ul li {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+}
+.procedure-box .procedure__inner ul li span:nth-child(1) {
+  margin: 0 13px;
+}
+.procedure-box .procedure__inner ul li span:nth-child(2) {
+  margin: 0 13px;
+}
+.procedure-box .procedure__inner ul li.active p {
+  color: rgb(55, 83, 225);
+  font-weight: 600;
+}
+
+.section1 {
+  background-color: unset;
+  margin-top: 105px;
+}
+.section1 .section1__inner span {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+.section1 .section1__inner .all-agree-box {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.section1 .section1__inner .all-agree-box .check-input-common {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.section1 .section1__inner .all-agree-box .check-input-common + label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/uncheck.svg");
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.section1 .section1__inner .all-agree-box .check-input-common:checked + label::before {
+  background-image: url("../img/checked.svg");
+}
+.section1 .section1__inner .all-agree-box label {
+  cursor: pointer;
+  margin: 0 1rem 0 0;
+}
+.section1 .section1__inner .agree-checkbox-common {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.section1 .section1__inner .agree-checkbox-common .check-input-common {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.section1 .section1__inner .agree-checkbox-common .check-input-common + label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/uncheck.svg");
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.section1 .section1__inner .agree-checkbox-common .check-input-common:checked + label::before {
+  background-image: url("../img/checked.svg");
+}
+.section1 .section1__inner .agree-checkbox-common label {
+  cursor: pointer;
+  margin: 0 1rem 0 0;
+}
+.section1 .section1__inner .agree-checkbox-common button {
+  width: 70px;
+  height: 25px;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.35);
+}
+.section1 .section1__inner .agree-finance-box {
+  margin: 15px auto;
+}
+.section1 .section1__inner .join-btn-box {
+  width: 100%;
+  max-width: 600px;
+  margin: 60px auto 0 auto;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+.section1 .section1__inner .join-btn-box .join-btn-common {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.section1 .section1__inner form[name=join-user-info] {
+  width: 600px;
+  margin: 0 auto;
+}
+.section1 .section1__inner form[name=join-user-info] div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section1 .section1__inner form[name=join-user-info] div:nth-child(1) {
+  margin-bottom: 2rem;
+}
+.section1 .section1__inner form[name=join-user-info] div:nth-child(2) {
+  margin-bottom: 2rem;
+}
+.section1 .section1__inner form[name=join-user-info] div:nth-child(3) {
+  margin-bottom: 2rem;
+}
+.section1 .section1__inner form[name=join-user-info] div:nth-child(4) {
+  margin-bottom: 2rem;
+}
+.section1 .section1__inner form[name=join-user-info] div:nth-child(5) {
+  margin-bottom: 2rem;
+}
+.section1 .section1__inner form[name=join-user-info] div:nth-child(6) {
+  margin-bottom: 2rem;
+}
+.section1 .section1__inner form[name=join-user-info] .select-input-tie {
+  flex-direction: unset;
+  width: 100%;
+}
+.section1 .section1__inner form[name=join-user-info] .select-input-tie span {
+  font-size: 1.2rem;
+}
+.section1 .section1__inner form[name=join-user-info] .select-input-tie button {
+  width: 100%;
+  max-width: 110px;
+  height: 55px;
+  background-color: rgb(55, 83, 225);
+  color: #fff;
+  border-radius: 6px;
+  margin-left: 1.3rem;
+}
+.section1 .section1__inner form[name=join-user-info] .id-box p.id-overlap {
+  font-size: 1.4rem;
+  color: red;
+  display: none;
+}
+.section1 .section1__inner form[name=join-user-info] .agree-checkbox-common {
+  width: unset;
+  margin: unset;
+}
+.section1 .section1__inner form[name=join-user-info] .agree-checkbox-common .checkbox__inner {
+  display: unset;
+}
+.section1 .section1__inner form[name=join-user-info] div.phone-number-box,
+.section1 .section1__inner form[name=join-user-info] div.messenger-check-box {
+  margin-bottom: unset;
+}
+.section1 .section1__inner .join-complete-dec {
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+}
+.section1 .section1__inner .login-page-move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 50px;
+  border-radius: 6px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.join-container .section1 {
+  margin: 105px auto;
+}

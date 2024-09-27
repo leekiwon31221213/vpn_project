@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="../css/main_mobile.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/login.css" />
-    <link rel="stylesheet" href="../css/login_mobile.css" />
+    <link rel="stylesheet" href="../css/join.css" />
+    <link rel="stylesheet" href="../css/join_mobile.css" />
+    <link rel="stylesheet" href="../css/nice.select.css" />
   </head>
   <body>
-    <div id="wrap">
+    <div id="wrap" class="join-container user-info-input">
       <!-- 메인 비주얼 -->
       <div class="header-main-container">
         <header>
@@ -88,25 +89,111 @@
         </header>
       </div>
 
-      <section class="section section1">
+      <div class="procedure-box">
+        <nav class="procedure__inner">
+          <ul>
+            <li>
+              <p>약관동의</p>
+              <span>></span>
+            </li>
+
+            <li class="active">
+              <p>정보입력</p>
+              <span>></span>
+            </li>
+
+            <li>
+              <p>가입완료</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="section section1" aria-labelledby="terms-title">
         <div class="section__inner section1__inner">
-          <h2>로그인</h2>
+          <span>회원가입</span>
+          <h2>정보입력</h2>
 
-          <form method="post" autocomplete="off" name="login-form">
-            <input type="text" placeholder="아이디(이메일 주소)" id="id" name="id" />
+          <form action="" method="post" autocomplete="off" name="join-user-info">
+            <div class="id-box">
+              <label for="email">
+                <span>아이디(이메일주소)</span>
+              </label>
+              <input type="email" id="email" name="user-email" placeholder="이메일 주소를 입력하세요." />
+              <!-- 아이디가 중복될때 보여야하는 곳입니다. -->
+              <p class="id-overlap">* 이미 사용중인 아이디입니다.</p>
+            </div>
 
-            <input type="password" placeholder="비밀번호" id="pw" name="pw" />
+            <div class="pw-box">
+              <label for="password">
+                <span>비밀번호</span>
+              </label>
+              <input type="password" id="password" name="user-password" placeholder="영문, 숫자, 특수문자 조합 6자이상 입력하세요" />
+            </div>
 
-            <ul class="user-info-search-join-box">
-              <li><a href="../join/join.html">회원가입</a></li>
-              <li><a href="../login/id_search.html">아이디찾기</a></li>
-              <li><a href="../login/pw_search.html">비밀번호찾기</a></li>
-            </ul>
+            <div class="confirm-pw-box">
+              <label for="confirm-password">
+                <span>비밀번호확인</span>
+              </label>
+              <input type="password" id="confirm-password" name="user-password-confirm" placeholder="정확하게 일치하게 입력" />
+            </div>
 
-            <div class="login-btn-box">
-              <button type="button" class="login-btn">로그인</button>
+            <div class="nick-name-box">
+              <label for="nickname">
+                <span>이름(닉네임)</span>
+              </label>
+              <input type="text" id="nickname" name="user-nickname" placeholder="한글 2자이상 입력하세요" />
+            </div>
+
+            <div class="phone-number-box">
+              <label for="join-phone-number">
+                <span>휴대폰 번호</span>
+              </label>
+
+              <div class="select-input-tie">
+                <select class="custom-select id-search">
+                  <option value="subject" selected="selected">한국(+82)</option>
+                  <option value="content">내용</option>
+                  <option value="writer_name">글쓴이</option>
+                  <option value="member_id">아이디</option>
+                  <option value="nick_name">별명</option>
+                  <option value="nick_name">별명</option>
+                </select>
+                <input type="number" placeholder="01012345678" id="join-phone-number" name="phone-number" placeholder="01012345678" />
+                <button type="button">인증코드 전송</button>
+              </div>
+            </div>
+
+            <div class="messenger-check-box">
+              <label for="messenger-check">
+                <span>이용메신저</span>
+              </label>
+
+              <div class="agree-checkbox-common">
+                <div class="checkbox__inner">
+                  <input type="checkbox" id="kakao-messenger" class="check-input-common" name="kakao-messenger" />
+                  <label for="kakao-messenger">카카오톡</label>
+
+                  <input type="checkbox" id="we-chat-messenger" class="check-input-common" name="we-chat-messenger" />
+                  <label for="we-chat-messenger">위챗</label>
+
+                  <input type="checkbox" id="no-messenger" class="check-input-common" name="no-messenger" />
+                  <label for="no-messenger">메신저 없음</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="messenger-box">
+              <label for="messenger-id">
+                <span>메신저 아이디</span>
+              </label>
+              <input type="text" id="messenger-id" name="messenger-id" placeholder="선택하신 메신저의 아이디를 입력해주세요" />
             </div>
           </form>
+
+          <div class="join-btn-box">
+            <button type="button" class="join-btn join-btn-common">회원가입</button>
+          </div>
         </div>
       </section>
       <!-- 무엇을 도와드릴까요? -->
@@ -265,6 +352,11 @@
 
     <script src="../js/jq.min.js"></script>
     <script src="../js/menu.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/nice.select.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        $('.custom-select').niceSelect();
+      });
+    </script>
   </body>
 </html>

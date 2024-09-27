@@ -1,0 +1,251 @@
+$main-color: rgba(55, 83, 225, 1);
+$input-border: 1px solid rgba(0, 0, 0, 0.15);
+@mixin termsBtn($width, $height, $fontSize, $bg-color, $border-radius, $border) {
+  width: $width;
+  height: $height;
+  font-size: $fontSize;
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  border: $border;
+}
+
+input {
+  border: $input-border;
+  width: 100%;
+  height: 55px;
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+.header-main-container {
+  height: 400px;
+
+  position: relative;
+  &::before {
+    content: '회원가입';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    font-size: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.procedure-box {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  .procedure__inner {
+    max-width: 1550px;
+    margin: 0 auto;
+    height: 100%;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: inherit;
+      text-align: center;
+      li {
+        height: 60px;
+        line-height: 60px;
+        display: flex;
+
+        span {
+          @for $i from 1 through 2 {
+            &:nth-child(#{$i}) {
+              margin: 0 13px;
+            }
+          }
+        }
+      }
+      li.active {
+        p {
+          color: $main-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.section1 {
+  background-color: unset;
+  margin-top: 105px;
+
+  .section1__inner {
+    span {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    .all-agree-box {
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+      .check-input-common {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .check-input-common + label::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../img/uncheck.svg');
+        margin-right: 8px; // 텍스트와 간격 조정
+        vertical-align: middle;
+      }
+
+      .check-input-common:checked + label::before {
+        background-image: url('../img/checked.svg');
+      }
+
+      label {
+        cursor: pointer;
+        margin: 0 1rem 0 0;
+      }
+    }
+
+    .agree-checkbox-common {
+      width: 400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+
+      .check-input-common {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .check-input-common + label::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../img/uncheck.svg');
+        margin-right: 8px; // 텍스트와 간격 조정
+        vertical-align: middle;
+      }
+
+      .check-input-common:checked + label::before {
+        background-image: url('../img/checked.svg');
+      }
+
+      label {
+        cursor: pointer;
+        margin: 0 1rem 0 0;
+      }
+
+      button {
+        @include termsBtn(70px, 25px, 1.4rem, #fff, 6px, 1px solid rgba(0, 0, 0, 0.15));
+        color: rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    .agree-finance-box {
+      margin: 15px auto;
+    }
+    .join-btn-box {
+      width: 100%;
+      max-width: 600px;
+      margin: 60px auto 0 auto;
+      height: 50px;
+      line-height: 50px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 6px;
+
+      .join-btn-common {
+        color: #fff;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    form[name='join-user-info'] {
+      width: 600px;
+      margin: 0 auto;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}) {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      .select-input-tie {
+        flex-direction: unset;
+        width: 100%;
+        span {
+          font-size: 1.2rem;
+        }
+        button {
+          width: 100%;
+          max-width: 110px;
+          height: 55px;
+          background-color: $main-color;
+          color: #fff;
+          border-radius: 6px;
+          margin-left: 1.3rem;
+        }
+      }
+      .id-box {
+        p.id-overlap {
+          font-size: 1.4rem;
+          color: red;
+          display: none;
+        }
+      }
+      .agree-checkbox-common {
+        width: unset;
+        margin: unset;
+        .checkbox__inner {
+          display: unset;
+        }
+      }
+      div.phone-number-box,
+      div.messenger-check-box {
+        margin-bottom: unset;
+      }
+    }
+
+    .join-complete-dec {
+      font-size: 1.7rem;
+      margin-bottom: 30px;
+    }
+    .login-page-move {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 50px;
+      border-radius: 6px;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #fff;
+    }
+  }
+}
+
+.join-container {
+  .section1 {
+    margin: 105px auto;
+  }
+}

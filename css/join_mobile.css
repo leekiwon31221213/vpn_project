@@ -1,0 +1,50 @@
+@media (max-width: 1024px) {
+  .section .section__inner h2 {
+    font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+  }
+  .section1 .section1__inner span {
+    font-size: clamp(1.6rem, 2.462vw, 1.8rem);
+  }
+  .section1 .section1__inner form[name=join-user-info] {
+    width: 100%;
+    margin: unset;
+  }
+  .section1 .section1__inner form[name=join-user-info] .agree-checkbox-common .checkbox__inner {
+    font-size: 1.4rem;
+  }
+  .section3 {
+    border-radius: unset;
+    margin-bottom: unset;
+  }
+  .section3 .section3__inner p.section-sub-title {
+    font-size: clamp(1.6rem, 2.909vw, 2.2rem);
+  }
+  .section3 .section3__inner .counsel-box li a img {
+    width: clamp(35px, 4.557vw, 50px);
+  }
+}
+@media (max-width: 550px) {
+  .section1 .section1__inner span {
+    font-size: clamp(1.4rem, 3.5vw, 1.6rem);
+  }
+  .section1 .section1__inner label {
+    font-size: clamp(1.5rem, 3.75vw, 1.6rem);
+  }
+  .section1 .section1__inner .agree-checkbox-common {
+    width: 100%;
+  }
+  .section1 .section1__inner .agree-checkbox-common button {
+    font-size: clamp(1.3rem, 3.25vw, 1.6rem);
+  }
+  .section1 .section1__inner .select-input-tie button {
+    font-size: 1.1rem;
+    padding: 0 5px;
+  }
+  .section1 .section1__inner form[name=join-user-info] {
+    width: 100%;
+    margin: unset;
+  }
+  .section1 .section1__inner form[name=join-user-info] .agree-checkbox-common .checkbox__inner {
+    font-size: 1.3rem;
+  }
+}

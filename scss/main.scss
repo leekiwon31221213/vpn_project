@@ -196,19 +196,20 @@ main {
         position: relative;
         @keyframes sale_ani {
           0% {
-            top: -130px; // Initial position
+            top: -30px; // Initial position
           }
           50% {
-            top: -140px; // Move up
+            top: -40px; // Move up
           }
           100% {
-            top: -130px; // Return to initial position
+            top: -30px; // Return to initial position
           }
         }
         img {
           position: absolute;
-          top: -130px;
+          top: -30px;
           animation: sale_ani 2s ease-in-out infinite;
+          width: 85px;
         }
         span.month-contract-text {
           font-size: clamp(2.2rem, 2.146vw, 2.4rem);
@@ -231,27 +232,22 @@ main {
 
 .section2 {
   .section2__inner {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
     .section2-contents {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 50px;
       flex-wrap: wrap;
-
       li {
-        // @for $i from 2 through 4 {
-        //   &:nth-child(#{$i}) {
-        //     position: relative;
+        opacity: 0;
+      }
 
-        //     &::after {
-        //       content: '';
-        //       position: absolute;
-        //       left: -23px;
-        //       top: 0;
-        //       height: 381px;
-        //       border-left: 1px dashed rgb(201, 201, 201);
-        //     }
-        //   }
+      li.active {
+        opacity: 1;
+        animation: fadeIn 0.6s ease-in-out;
       }
 
       .emphasis {
@@ -272,6 +268,11 @@ main {
         display: inline-block;
       }
     }
+  }
+
+  .section2__inner.active {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -385,3 +386,15 @@ main {
   }
 }
 /* // */
+
+/* 키프레임 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
