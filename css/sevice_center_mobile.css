@@ -40,12 +40,6 @@
     height: 40px;
     line-height: 40px;
   }
-  .section1 .section1__inner .notice-box .notice-detail table thead th {
-    font-size: clamp(1.5rem, 2.727vw, 1.6rem);
-  }
-  .section1 .section1__inner .notice-box .notice-detail table tbody td {
-    font-size: clamp(1.5rem, 2.727vw, 1.6rem);
-  }
   .section1 .section1__inner .search-box input {
     width: clamp(150px, 27.273vw, 250px);
     height: 40px;
@@ -64,12 +58,6 @@
   }
   .section1 .section1__inner .notice-box h3 {
     font-size: 2.5rem;
-  }
-  .section1 .section1__inner .notice-box .notice-detail table thead th:nth-child(2) {
-    width: 60%;
-  }
-  .section1 .section1__inner .notice-box .notice-detail table tbody td {
-    font-size: clamp(1.4rem, 3.5vw, 1.5rem);
   }
   .section3 .section3__inner .counsel-box li {
     max-width: 100px;

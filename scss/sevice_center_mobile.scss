@@ -64,18 +64,6 @@
           }
         }
         .notice-detail {
-          table {
-            thead {
-              th {
-                font-size: clamp(1.5rem, 2.727vw, 1.6rem);
-              }
-            }
-            tbody {
-              td {
-                font-size: clamp(1.5rem, 2.727vw, 1.6rem);
-              }
-            }
-          }
         }
       }
       .search-box {
@@ -112,20 +100,6 @@
           font-size: 2.5rem;
         }
         .notice-detail {
-          table {
-            thead {
-              th {
-                &:nth-child(2) {
-                  width: 60%;
-                }
-              }
-            }
-            tbody {
-              td {
-                font-size: clamp(1.4rem, 3.5vw, 1.5rem);
-              }
-            }
-          }
         }
       }
     }
