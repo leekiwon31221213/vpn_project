@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/main_mobile.css" />
     <link rel="stylesheet" href="./css/nice.select.css" />
+    <link rel="stylesheet" href="./css/fixed.css" />
   </head>
   <body>
     <div id="wrap">
@@ -350,6 +351,22 @@
         </div>
       </section>
 
+      <div class="fixed-btn-box">
+        <ul class="fixed-btn__inner">
+          <li>
+            <a href="#none"><img src="./img/fixed_kakao.svg" alt="고정카카오버튼" /></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./img/fixed_wechat.svg" alt="고정위챗버튼" /></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./img/fixed_live.svg" alt="고정라이브버튼" /></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="backToTop()"><img src="./img/top_arrow.svg" alt="탑버튼" /></a>
+          </li>
+        </ul>
+      </div>
       <!-- 푸터 -->
       <footer>
         <div class="footer__inner pc">
@@ -478,7 +495,7 @@
     <script src="./js/jq.min.js"></script>
     <script src="./js/nice.select.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/scroll.js"></script>
+    <script src="./js/main.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         $('.custom-select').niceSelect();

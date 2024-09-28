@@ -16,5 +16,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
     }
+
+    // fixed btn
+    if (document.documentElement.scrollTop > 150) {
+      document.querySelector('.fixed-btn-box').classList.add('active');
+    } else {
+      document.querySelector('.fixed-btn-box').classList.remove('active');
+    }
   });
 });
+
+function backToTop() {
+  const position = document.documentElement.scrollTop || document.body.scrollTop;
+  if (position) {
+    window.requestAnimationFrame(() => {
+      window.scrollTo(0, position - position / 10);
+      backToTop();
+    });
+  }
+}
