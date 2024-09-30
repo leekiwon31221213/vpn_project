@@ -36,6 +36,7 @@
         display: flex;
         align-items: center;
         li {
+          display: flex;
           &:nth-child(1) {
             flex: 1;
           }
@@ -49,7 +50,10 @@
                 margin-right: clamp(3rem, 2.927vw, 6rem);
               }
             }
-            button {
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
               font-size: clamp(1.6rem, 1.561vw, 1.8rem);
               width: clamp(160px, 15.61vw, 183px);
               height: 53px;

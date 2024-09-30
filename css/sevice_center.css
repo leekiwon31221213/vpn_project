@@ -62,64 +62,130 @@ input {
   background-color: unset;
   margin-top: 105px;
 }
-.section1 .section1__inner .notice-box {
+.section1 .section1__inner .notice-box,
+.section1 .section1__inner .qna-box {
   display: flex;
   justify-content: space-evenly;
   /* 공지사항 */
 }
-.section1 .section1__inner .notice-box h3 {
+.section1 .section1__inner .notice-box h3,
+.section1 .section1__inner .qna-box h3 {
   margin-bottom: 6rem;
   color: #333;
   font-weight: 600;
   font-size: 2.8rem;
 }
-.section1 .section1__inner .notice-box .notice-detail {
+.section1 .section1__inner .notice-box .notice-detail,
+.section1 .section1__inner .notice-box .qna-detail,
+.section1 .section1__inner .qna-box .notice-detail,
+.section1 .section1__inner .qna-box .qna-detail {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.section1 .section1__inner .notice-box .notice-detail .accordion li {
+.section1 .section1__inner .notice-box .notice-detail .accordion li,
+.section1 .section1__inner .notice-box .qna-detail .accordion li,
+.section1 .section1__inner .qna-box .notice-detail .accordion li,
+.section1 .section1__inner .qna-box .qna-detail .accordion li {
   margin-bottom: 1rem;
 }
-.section1 .section1__inner .notice-box .notice-detail .accordion li .title {
+.section1 .section1__inner .notice-box .notice-detail .accordion li .title,
+.section1 .section1__inner .notice-box .qna-detail .accordion li .title,
+.section1 .section1__inner .qna-box .notice-detail .accordion li .title,
+.section1 .section1__inner .qna-box .qna-detail .accordion li .title {
   background-color: #f7f7f7;
   cursor: pointer;
   height: 70px;
-  line-height: 70px;
   display: inline-block;
   width: 100%;
   text-align: left;
-  padding: 0 20px;
+  padding: 20px;
   font-weight: 600;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.section1 .section1__inner .notice-box .notice-detail .accordion li .title:after {
+.section1 .section1__inner .notice-box .notice-detail .accordion li .title:after,
+.section1 .section1__inner .notice-box .qna-detail .accordion li .title:after,
+.section1 .section1__inner .qna-box .notice-detail .accordion li .title:after,
+.section1 .section1__inner .qna-box .qna-detail .accordion li .title:after {
   content: "+";
   transition: 0.35s;
   font-size: 2.2rem;
+  padding-left: 10px;
 }
-.section1 .section1__inner .notice-box .notice-detail .accordion li .title.active:after {
+.section1 .section1__inner .notice-box .notice-detail .accordion li .title.active:after,
+.section1 .section1__inner .notice-box .qna-detail .accordion li .title.active:after,
+.section1 .section1__inner .qna-box .notice-detail .accordion li .title.active:after,
+.section1 .section1__inner .qna-box .qna-detail .accordion li .title.active:after {
   transform: rotate(45deg);
 }
-.section1 .section1__inner .notice-box .notice-detail .accordion li .content {
+.section1 .section1__inner .notice-box .notice-detail .accordion li .content,
+.section1 .section1__inner .notice-box .qna-detail .accordion li .content,
+.section1 .section1__inner .qna-box .notice-detail .accordion li .content,
+.section1 .section1__inner .qna-box .qna-detail .accordion li .content {
   display: none;
   padding: 7rem 2rem;
   text-align: left;
   line-height: 3rem;
 }
-.section1 .section1__inner .notice-box .notice-detail .accordion li .content.active {
+.section1 .section1__inner .notice-box .notice-detail .accordion li .content.active,
+.section1 .section1__inner .notice-box .qna-detail .accordion li .content.active,
+.section1 .section1__inner .qna-box .notice-detail .accordion li .content.active,
+.section1 .section1__inner .qna-box .qna-detail .accordion li .content.active {
   display: block;
 }
-.section1 .section1__inner .notice-box .write-btn {
+.section1 .section1__inner .notice-box .notice-detail table,
+.section1 .section1__inner .notice-box .qna-detail table,
+.section1 .section1__inner .qna-box .notice-detail table,
+.section1 .section1__inner .qna-box .qna-detail table {
+  width: 100%;
+}
+.section1 .section1__inner .notice-box .notice-detail table thead,
+.section1 .section1__inner .notice-box .qna-detail table thead,
+.section1 .section1__inner .qna-box .notice-detail table thead,
+.section1 .section1__inner .qna-box .qna-detail table thead {
+  width: 100%;
+  height: 50px;
+  vertical-align: middle;
+  background-color: rgb(247, 247, 247);
+  border-bottom: 1px solid #ccc;
+  border-top: 2px solid rgb(55, 83, 225);
+}
+.section1 .section1__inner .notice-box .notice-detail table tbody tr,
+.section1 .section1__inner .notice-box .qna-detail table tbody tr,
+.section1 .section1__inner .qna-box .notice-detail table tbody tr,
+.section1 .section1__inner .qna-box .qna-detail table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+.section1 .section1__inner .notice-box .notice-detail table tbody tr td,
+.section1 .section1__inner .notice-box .qna-detail table tbody tr td,
+.section1 .section1__inner .qna-box .notice-detail table tbody tr td,
+.section1 .section1__inner .qna-box .qna-detail table tbody tr td {
+  padding: 20px 5px;
+}
+.section1 .section1__inner .notice-box .notice-detail table tbody tr td:nth-child(2),
+.section1 .section1__inner .notice-box .qna-detail table tbody tr td:nth-child(2),
+.section1 .section1__inner .qna-box .notice-detail table tbody tr td:nth-child(2),
+.section1 .section1__inner .qna-box .qna-detail table tbody tr td:nth-child(2) {
+  text-align: left;
+}
+.section1 .section1__inner .notice-box .notice-detail table tbody tr td strong,
+.section1 .section1__inner .notice-box .qna-detail table tbody tr td strong,
+.section1 .section1__inner .qna-box .notice-detail table tbody tr td strong,
+.section1 .section1__inner .qna-box .qna-detail table tbody tr td strong {
+  color: rgb(55, 83, 225);
+}
+.section1 .section1__inner .notice-box .write-btn,
+.section1 .section1__inner .qna-box .write-btn {
   text-align: right;
   margin-top: 5rem;
   display: flex;
   justify-content: flex-end;
 }
-.section1 .section1__inner .notice-box .write-btn a {
+.section1 .section1__inner .notice-box .write-btn a,
+.section1 .section1__inner .qna-box .write-btn a {
   max-width: 105px;
   height: 50px;
   line-height: 50px;
@@ -174,6 +240,7 @@ input {
   margin-left: 1rem;
 }
 
-.mypage-container.notice .section1 {
+.service-center-container.notice .section1,
+.service-center-container.qna .section1 {
   margin: 105px auto;
 }

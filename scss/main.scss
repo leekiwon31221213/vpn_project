@@ -31,7 +31,7 @@ body {
   border-radius: $border-radius;
 }
 
-button.program-down-btn {
+a.program-down-btn {
   @include program-down(clamp(190px, 18.537vw, 225px), 72px, rgba(55, 83, 225, 1), rgba(255, 255, 255, 1), $border-radius);
   font-weight: 600;
 }
@@ -68,27 +68,31 @@ main {
   }
   ul {
     display: flex;
+    align-items: center;
     li {
-      &:nth-child(1) button {
-        font-size: clamp(2rem, 1.951vw, 2.2rem);
-        margin-right: 20px;
-      }
-      &:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 72px;
+      text-align: center;
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #fff;
-        border-radius: $border-radius;
-        width: clamp(190px, 18.537vw, 225px);
-        height: 72px;
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: clamp(2rem, 1.951vw, 2.2rem);
-          img {
-            margin-right: 10px;
-          }
+        font-size: clamp(2rem, 1.951vw, 2.2rem);
+      }
+    }
+    .down-btn {
+      font-size: clamp(2rem, 1.951vw, 2.2rem);
+      margin-right: 20px;
+    }
+    .guide-btn {
+      border: 1px solid #fff;
+      border-radius: $border-radius;
+      width: clamp(190px, 18.537vw, 225px);
+      a {
+        img {
+          margin-right: 10px;
         }
       }
     }

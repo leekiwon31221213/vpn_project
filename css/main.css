@@ -21,7 +21,7 @@ body {
 }
 
 /* 프로그램 다운로드  */
-button.program-down-btn {
+a.program-down-btn {
   width: clamp(190px, 18.537vw, 225px);
   height: 72px;
   color: rgb(55, 83, 225);
@@ -62,27 +62,31 @@ main p {
 }
 main ul {
   display: flex;
+  align-items: center;
 }
-main ul li:nth-child(1) button {
+main ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  text-align: center;
+}
+main ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(2rem, 1.951vw, 2.2rem);
+}
+main ul .down-btn {
   font-size: clamp(2rem, 1.951vw, 2.2rem);
   margin-right: 20px;
 }
-main ul li:nth-child(2) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+main ul .guide-btn {
   border: 1px solid #fff;
   border-radius: 16px;
   width: clamp(190px, 18.537vw, 225px);
-  height: 72px;
 }
-main ul li:nth-child(2) a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(2rem, 1.951vw, 2.2rem);
-}
-main ul li:nth-child(2) a img {
+main ul .guide-btn a img {
   margin-right: 10px;
 }
 

@@ -4,7 +4,8 @@
   }
   .section1 {
     .section1__inner {
-      .notice-box {
+      .notice-box,
+      .qna-box {
         flex-direction: column;
         align-items: center;
         h3 {
@@ -12,10 +13,21 @@
           margin-bottom: 2rem;
         }
 
-        .notice-detail {
+        .notice-detail,
+        .qna-detail {
           width: 100%;
           h3 {
             margin-top: 5rem;
+          }
+
+          table {
+            thead {
+              tr {
+                &:nth-child(1) {
+                  width: 15%;
+                }
+              }
+            }
           }
         }
       }
@@ -53,7 +65,8 @@
 @media (max-width: 768px) {
   .section1 {
     .section1__inner {
-      .notice-box {
+      .notice-box,
+      .qna-box {
         .write-btn {
           margin: 2.5rem 0;
           font-size: clamp(1.5rem, 2.727vw, 1.6rem);
@@ -64,6 +77,18 @@
           }
         }
         .notice-detail {
+          table {
+            thead {
+              th {
+                font-size: clamp(1.5rem, 2.727vw, 1.6rem);
+              }
+            }
+            tbody {
+              td {
+                font-size: clamp(1.5rem, 2.727vw, 1.6rem);
+              }
+            }
+          }
         }
       }
       .search-box {
@@ -95,11 +120,26 @@
   }
   .section1 {
     .section1__inner {
-      .notice-box {
+      .notice-box,
+      .qna-box {
         h3 {
           font-size: 2.5rem;
         }
         .notice-detail {
+          table {
+            thead {
+              th {
+                &:nth-child(2) {
+                  width: 60%;
+                }
+              }
+            }
+            tbody {
+              td {
+                font-size: clamp(1.4rem, 3.5vw, 1.5rem);
+              }
+            }
+          }
         }
       }
     }

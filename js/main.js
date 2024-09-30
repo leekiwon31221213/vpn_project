@@ -16,13 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
     }
-
-    // fixed btn
-    if (document.documentElement.scrollTop > 150) {
-      document.querySelector('.fixed-btn-box').classList.add('active');
-    } else {
-      document.querySelector('.fixed-btn-box').classList.remove('active');
-    }
   });
 });
 

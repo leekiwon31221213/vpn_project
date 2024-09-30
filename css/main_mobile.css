@@ -29,8 +29,11 @@
   .header-main-container header {
     width: 100%;
     background-color: #fff;
-    height: 80px;
     border-radius: 0 0 30px 30px;
+    position: fixed;
+    height: 80px;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   }
   .header-main-container header .mo-menu {
     width: 100%;
@@ -58,7 +61,7 @@
     font-size: 2rem;
     font-weight: 600;
   }
-  .header-main-container header .mo-menu nav .menu-box li button.program-down-btn {
+  .header-main-container header .mo-menu nav .menu-box li a.program-down-btn {
     font-size: 2rem;
     width: unset;
     height: unset;
@@ -148,7 +151,7 @@
   }
   .header-main-container main {
     text-align: center;
-    margin: 140px auto auto auto;
+    padding: 140px 0 0 0;
   }
   .header-main-container main span.sub-text {
     font-size: clamp(1.9rem, 2.474vw, 2.2rem);
@@ -167,13 +170,13 @@
   .header-main-container main ul {
     justify-content: center;
   }
-  .header-main-container main ul li:nth-child(1) button {
+  .header-main-container main ul .down-btn a {
     font-size: clamp(1.6rem, 2.083vw, 2rem);
   }
-  .header-main-container main ul li:nth-child(2) a {
+  .header-main-container main ul .guide-btn a {
     font-size: clamp(1.6rem, 2.083vw, 2rem);
   }
-  .header-main-container main ul li:nth-child(2) a img {
+  .header-main-container main ul .guide-btn a img {
     width: clamp(25px, 3.255vw, 32px);
   }
   .section1 .section1__inner .month-contract-box {
@@ -211,23 +214,23 @@
   .header-main-container main ul li {
     width: 100%;
   }
-  .header-main-container main ul li:nth-child(1) {
+  .header-main-container main ul .down-btn {
     margin-right: 10px;
   }
-  .header-main-container main ul li:nth-child(1) button {
+  .header-main-container main ul .down-btn a {
     width: 100%;
     margin-right: unset;
     font-size: clamp(1.5rem, 3.5vw, 1.6rem);
     height: clamp(60px, 15vw, 70px);
   }
-  .header-main-container main ul li:nth-child(2) {
+  .header-main-container main ul .guide-btn {
     width: 100%;
     height: clamp(60px, 15vw, 70px);
   }
-  .header-main-container main ul li:nth-child(2) a {
+  .header-main-container main ul .guide-btn a {
     font-size: clamp(1.5rem, 3.5vw, 1.6rem);
   }
-  .header-main-container main ul li:nth-child(2) a img {
+  .header-main-container main ul .guide-btn a img {
     width: clamp(20px, 5vw, 25px);
   }
   .section3 {

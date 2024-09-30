@@ -2,19 +2,33 @@
   .section .section__inner h2 {
     font-size: clamp(2.8rem, 5.091vw, 3.5rem);
   }
-  .section1 .section1__inner .notice-box {
+  .section1 .section1__inner .notice-box,
+  .section1 .section1__inner .qna-box {
     flex-direction: column;
     align-items: center;
   }
-  .section1 .section1__inner .notice-box h3 {
+  .section1 .section1__inner .notice-box h3,
+  .section1 .section1__inner .qna-box h3 {
     text-align: center;
     margin-bottom: 2rem;
   }
-  .section1 .section1__inner .notice-box .notice-detail {
+  .section1 .section1__inner .notice-box .notice-detail,
+  .section1 .section1__inner .notice-box .qna-detail,
+  .section1 .section1__inner .qna-box .notice-detail,
+  .section1 .section1__inner .qna-box .qna-detail {
     width: 100%;
   }
-  .section1 .section1__inner .notice-box .notice-detail h3 {
+  .section1 .section1__inner .notice-box .notice-detail h3,
+  .section1 .section1__inner .notice-box .qna-detail h3,
+  .section1 .section1__inner .qna-box .notice-detail h3,
+  .section1 .section1__inner .qna-box .qna-detail h3 {
     margin-top: 5rem;
+  }
+  .section1 .section1__inner .notice-box .notice-detail table thead tr:nth-child(1),
+  .section1 .section1__inner .notice-box .qna-detail table thead tr:nth-child(1),
+  .section1 .section1__inner .qna-box .notice-detail table thead tr:nth-child(1),
+  .section1 .section1__inner .qna-box .qna-detail table thead tr:nth-child(1) {
+    width: 15%;
   }
   .section1 .section1__inner .pagination ul li {
     margin: 0 1rem;
@@ -31,14 +45,24 @@
   }
 }
 @media (max-width: 768px) {
-  .section1 .section1__inner .notice-box .write-btn {
+  .section1 .section1__inner .notice-box .write-btn,
+  .section1 .section1__inner .qna-box .write-btn {
     margin: 2.5rem 0;
     font-size: clamp(1.5rem, 2.727vw, 1.6rem);
   }
-  .section1 .section1__inner .notice-box .write-btn a {
+  .section1 .section1__inner .notice-box .write-btn a,
+  .section1 .section1__inner .qna-box .write-btn a {
     max-width: clamp(80px, 14.545vw, 105px);
     height: 40px;
     line-height: 40px;
+  }
+  .section1 .section1__inner .notice-box .notice-detail table thead th,
+  .section1 .section1__inner .qna-box .notice-detail table thead th {
+    font-size: clamp(1.5rem, 2.727vw, 1.6rem);
+  }
+  .section1 .section1__inner .notice-box .notice-detail table tbody td,
+  .section1 .section1__inner .qna-box .notice-detail table tbody td {
+    font-size: clamp(1.5rem, 2.727vw, 1.6rem);
   }
   .section1 .section1__inner .search-box input {
     width: clamp(150px, 27.273vw, 250px);
@@ -56,8 +80,17 @@
     width: clamp(100px, 25vw, 137px);
     font-size: clamp(1.4rem, 2.545vw, 1.6rem);
   }
-  .section1 .section1__inner .notice-box h3 {
+  .section1 .section1__inner .notice-box h3,
+  .section1 .section1__inner .qna-box h3 {
     font-size: 2.5rem;
+  }
+  .section1 .section1__inner .notice-box .notice-detail table thead th:nth-child(2),
+  .section1 .section1__inner .qna-box .notice-detail table thead th:nth-child(2) {
+    width: 60%;
+  }
+  .section1 .section1__inner .notice-box .notice-detail table tbody td,
+  .section1 .section1__inner .qna-box .notice-detail table tbody td {
+    font-size: clamp(1.4rem, 3.5vw, 1.5rem);
   }
   .section3 .section3__inner .counsel-box li {
     max-width: 100px;
