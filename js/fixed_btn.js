@@ -30,3 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   fixed_btn();
 });
+function backToTop() {
+  const position = document.documentElement.scrollTop || document.body.scrollTop;
+  if (position) {
+    window.requestAnimationFrame(() => {
+      window.scrollTo(0, position - position / 10);
+      backToTop();
+    });
+  }
+}

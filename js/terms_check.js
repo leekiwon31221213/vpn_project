@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function toggleNextButton() {
     const allChecked = service_terms_checkbox.checked && finance_terms_checkbox.checked && privacy_terms_checkbox.checked;
     next_btn.forEach((btn) => {
-      btn.disabled = !allChecked; // 모든 체크박스가 체크되면 버튼 활성화
+      btn.disabled = !allChecked;
+      btn.addEventListener('click', function () {
+        location.href = '../join/user_info_input.html';
+      });
     });
   }
 

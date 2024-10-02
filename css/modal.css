@@ -21,7 +21,7 @@
 .modal-common .modal__inner {
   padding: 20px;
   width: 90%;
-  height: 410px;
+  height: 455px;
   max-width: 560px;
   background-color: #fff;
   color: #333;
@@ -51,4 +51,22 @@
   right: 20px;
   top: 25px;
   width: 15px;
+}
+.modal-common .modal__inner .join-btn-box {
+  display: flex;
+  justify-content: center;
+}
+.modal-common .modal__inner .join-btn-box button {
+  width: 110px;
+  margin-top: 2rem;
+  height: 50px;
+  border-radius: 6px;
+}
+.modal-common .modal__inner .join-btn-box button.terms-ok {
+  background-color: rgb(55, 83, 225);
+  margin-right: 1rem;
+  color: #fff;
+}
+.modal-common .modal__inner .join-btn-box button.close-btn {
+  border: 1px solid #ccc;
 }
