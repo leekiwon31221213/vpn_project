@@ -117,35 +117,35 @@
 
           <!-- 전체 동의 -->
           <div class="all-agree-box">
-            <input type="checkbox" id="agree-all" name="agree-all" class="check-input-common" />
+            <input type="checkbox" id="agree-all" name="agree-all" class="check-input-common agree-all" />
             <label for="agree-all">전체 동의</label>
           </div>
 
           <!-- 서비스 이용약관 (필수) -->
           <div class="agree-service-box agree-checkbox-common">
-            <input type="checkbox" id="agree-service" class="check-input-common" name="agree-service" />
+            <input type="checkbox" data-modal="service_term" id="agree-service" class="check-input-common agree-service" name="agree-service" required />
             <label for="agree-service">서비스 이용약관 (필수)</label>
-            <button type="button" aria-label="서비스 이용약관 보기">약관 보기</button>
+            <button type="button" aria-label="서비스 이용약관 보기" class="join-terms-btn">약관 보기</button>
           </div>
 
           <!-- 전자금융거래 이용약관 (필수) -->
           <div class="agree-finance-box agree-checkbox-common">
-            <input type="checkbox" id="agree-finance" class="check-input-common" name="agree-finance" />
+            <input type="checkbox" id="agree-finance" class="check-input-common agree-finance" name="agree-finance" required />
             <label for="agree-finance">전자금융거래 이용약관 (필수)</label>
-            <button type="button" aria-label="전자금융거래 이용약관 보기">약관 보기</button>
+            <button type="button" aria-label="전자금융거래 이용약관 보기" class="join-terms-btn">약관 보기</button>
           </div>
 
           <!-- 개인정보처리방침 (필수) -->
           <div class="agree-privacy-box agree-checkbox-common">
             <div>
-              <input type="checkbox" id="agree-privacy" class="check-input-common" name="agree-privacy" />
+              <input type="checkbox" id="agree-privacy" class="check-input-common agree-privacy" name="agree-privacy" required />
               <label for="agree-privacy">개인정보처리방침 (필수)</label>
             </div>
-            <button type="button" aria-label="개인정보처리방침 보기">약관 보기</button>
+            <button type="button" aria-label="개인정보처리방침 보기" class="join-terms-btn">약관 보기</button>
           </div>
 
           <div class="join-btn-box">
-            <button type="button" class="next-btn join-btn-common">다음</button>
+            <button type="button" class="next-btn join-btn-common" disabled>다음</button>
           </div>
         </div>
       </section>
@@ -307,5 +307,6 @@
     <script src="../js/menu.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/fixed_btn.js"></script>
+    <script src="../js/terms_check.js"></script>
   </body>
 </html>

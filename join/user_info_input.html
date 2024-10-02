@@ -116,12 +116,12 @@
           <span>회원가입</span>
           <h2>정보입력</h2>
 
-          <form action="" method="post" autocomplete="off" name="join-user-info">
+          <form action="" method="post" autocomplete="off" name="join-user-info" class="join-user-info-form">
             <div class="id-box">
               <label for="email">
                 <span>아이디(이메일주소)</span>
               </label>
-              <input type="email" id="email" name="user-email" placeholder="이메일 주소를 입력하세요." />
+              <input class="email-input" type="email" id="email" name="user-email" placeholder="이메일 주소를 입력하세요." required />
               <!-- 아이디가 중복될때 보여야하는 곳입니다. -->
               <p class="id-overlap">* 이미 사용중인 아이디입니다.</p>
             </div>
@@ -130,21 +130,23 @@
               <label for="password">
                 <span>비밀번호</span>
               </label>
-              <input type="password" id="password" name="user-password" placeholder="영문, 숫자, 특수문자 조합 6자이상 입력하세요" />
+              <input class="pass-word-input" type="password" id="password" name="user-password" placeholder="영문, 숫자, 특수문자 조합 6자이상 입력하세요" required disabled />
             </div>
 
             <div class="confirm-pw-box">
               <label for="confirm-password">
                 <span>비밀번호확인</span>
               </label>
-              <input type="password" id="confirm-password" name="user-password-confirm" placeholder="정확하게 일치하게 입력" />
+              <input class="pass-word-check" type="password" id="confirm-password" name="user-password-confirm" placeholder="정확하게 일치하게 입력" required disabled />
+
+              <p class="pass-word-match-text"></p>
             </div>
 
             <div class="nick-name-box">
               <label for="nickname">
                 <span>이름(닉네임)</span>
               </label>
-              <input type="text" id="nickname" name="user-nickname" placeholder="한글 2자이상 입력하세요" />
+              <input class="nick-name-input" type="text" id="nickname" name="user-nickname" placeholder="한글 2자이상 입력하세요" required disabled />
             </div>
 
             <div class="phone-number-box">
@@ -161,8 +163,14 @@
                   <option value="nick_name">별명</option>
                   <option value="nick_name">별명</option>
                 </select>
-                <input type="number" placeholder="01012345678" id="join-phone-number" name="phone-number" placeholder="01012345678" />
-                <button type="button">인증코드 전송</button>
+                <input class="phone-number-input" type="text" placeholder="01012345678" id="join-phone-number" name="phone-number" placeholder="01012345678" required maxlength="13" disabled />
+                <button type="button" class="certification-num-send" disabled>인증코드 전송</button>
+              </div>
+
+              <div class="certification-number-box">
+                <input type="text" class="certification-num-input" placeholder="인증번호를 입력해주세요" maxlength="6" disabled />
+
+                <button type="button" disabled class="certification-num-check">확인</button>
               </div>
             </div>
 
@@ -194,7 +202,7 @@
           </form>
 
           <div class="join-btn-box">
-            <button type="button" class="join-btn join-btn-common">회원가입</button>
+            <button type="button" class="join-btn join-btn-common" disabled>회원가입</button>
           </div>
         </div>
       </section>
@@ -357,6 +365,8 @@
     <script src="../js/nice.select.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/fixed_btn.js"></script>
+    <script src="../js/join.js"></script>
+
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         $('.custom-select').niceSelect();

@@ -166,13 +166,22 @@ input {
       margin: 60px auto 0 auto;
       height: 50px;
       line-height: 50px;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: unset;
       border-radius: 6px;
 
       .join-btn-common {
-        color: #fff;
+        color: #333;
         width: 100%;
         height: 100%;
+        transition: 0.3s;
+        &:disabled {
+          border: 1px solid #ccc;
+        }
+        &:enabled {
+          background-color: #333;
+          color: #fff;
+          border: unset;
+        }
       }
     }
 
@@ -189,6 +198,9 @@ input {
             margin-bottom: 2rem;
           }
         }
+        &:nth-child(5) {
+          margin-bottom: unset;
+        }
       }
       .select-input-tie {
         flex-direction: unset;
@@ -204,12 +216,27 @@ input {
           color: #fff;
           border-radius: 6px;
           margin-left: 1.3rem;
+          transition: 0.3s;
+          &:disabled {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+          }
         }
       }
       .id-box {
         p.id-overlap {
           font-size: 1.4rem;
           color: red;
+          margin-top: 8px;
+          display: none;
+        }
+      }
+      .confirm-pw-box {
+        p.pass-word-match-text {
+          font-size: 1.4rem;
+          color: red;
+          margin-top: 8px;
           display: none;
         }
       }
@@ -220,9 +247,15 @@ input {
           display: unset;
         }
       }
-      div.phone-number-box,
+      div.select-input-tie {
+        margin-bottom: unset;
+        div {
+          margin-bottom: unset;
+        }
+      }
       div.messenger-check-box {
         margin-bottom: unset;
+        margin-top: 2rem;
       }
     }
 
@@ -240,6 +273,34 @@ input {
       max-width: 600px;
       margin: 0 auto;
       color: #fff;
+    }
+
+    form[name='join-user-info'] {
+      div.certification-number-box {
+        margin-bottom: unset;
+        display: none;
+        flex-direction: unset;
+        margin-top: 0.8rem;
+        width: 100%;
+        .certification-num-input {
+          width: 170px;
+        }
+        button {
+          width: 100%;
+          max-width: 110px;
+          height: 55px;
+          background-color: $main-color;
+          color: #fff;
+          border-radius: 6px;
+          margin-left: 1.3rem;
+          transition: 0.3s;
+          &:disabled {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+          }
+        }
+      }
     }
   }
 }

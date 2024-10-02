@@ -10,20 +10,28 @@
   .pc-menu {
     display: none;
   }
-  .section p.notice {
-    font-size: clamp(1.4rem, 2.545vw, 2rem);
+  .section {
+    p.notice {
+      font-size: clamp(1.4rem, 2.545vw, 2rem);
+    }
   }
-  .section p.notice::before {
-    margin-right: unset;
-    margin-top: 40px;
-    position: absolute;
-    top: -15px;
+  .section {
+    p.notice::before {
+      margin-right: unset;
+      margin-top: 40px;
+      position: absolute;
+      top: -15px;
+    }
   }
-  .section .section__inner p.section-sub-title {
-    font-size: clamp(1.6rem, 2.909vw, 2.2rem);
-  }
-  .section .section__inner h2 {
-    font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+  .section {
+    .section__inner {
+      p.section-sub-title {
+        font-size: clamp(1.6rem, 2.909vw, 2.2rem);
+      }
+      h2 {
+        font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+      }
+    }
   }
   //헤더,메인
   .header-main-container {

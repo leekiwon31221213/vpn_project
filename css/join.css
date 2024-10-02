@@ -144,13 +144,22 @@ input {
   margin: 60px auto 0 auto;
   height: 50px;
   line-height: 50px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: unset;
   border-radius: 6px;
 }
 .section1 .section1__inner .join-btn-box .join-btn-common {
-  color: #fff;
+  color: #333;
   width: 100%;
   height: 100%;
+  transition: 0.3s;
+}
+.section1 .section1__inner .join-btn-box .join-btn-common:disabled {
+  border: 1px solid #ccc;
+}
+.section1 .section1__inner .join-btn-box .join-btn-common:enabled {
+  background-color: #333;
+  color: #fff;
+  border: unset;
 }
 .section1 .section1__inner form[name=join-user-info] {
   width: 600px;
@@ -179,6 +188,9 @@ input {
 .section1 .section1__inner form[name=join-user-info] div:nth-child(6) {
   margin-bottom: 2rem;
 }
+.section1 .section1__inner form[name=join-user-info] div:nth-child(5) {
+  margin-bottom: unset;
+}
 .section1 .section1__inner form[name=join-user-info] .select-input-tie {
   flex-direction: unset;
   width: 100%;
@@ -194,10 +206,23 @@ input {
   color: #fff;
   border-radius: 6px;
   margin-left: 1.3rem;
+  transition: 0.3s;
+}
+.section1 .section1__inner form[name=join-user-info] .select-input-tie button:disabled {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
 }
 .section1 .section1__inner form[name=join-user-info] .id-box p.id-overlap {
   font-size: 1.4rem;
   color: red;
+  margin-top: 8px;
+  display: none;
+}
+.section1 .section1__inner form[name=join-user-info] .confirm-pw-box p.pass-word-match-text {
+  font-size: 1.4rem;
+  color: red;
+  margin-top: 8px;
   display: none;
 }
 .section1 .section1__inner form[name=join-user-info] .agree-checkbox-common {
@@ -207,9 +232,15 @@ input {
 .section1 .section1__inner form[name=join-user-info] .agree-checkbox-common .checkbox__inner {
   display: unset;
 }
-.section1 .section1__inner form[name=join-user-info] div.phone-number-box,
+.section1 .section1__inner form[name=join-user-info] div.select-input-tie {
+  margin-bottom: unset;
+}
+.section1 .section1__inner form[name=join-user-info] div.select-input-tie div {
+  margin-bottom: unset;
+}
 .section1 .section1__inner form[name=join-user-info] div.messenger-check-box {
   margin-bottom: unset;
+  margin-top: 2rem;
 }
 .section1 .section1__inner .join-complete-dec {
   font-size: 1.7rem;
@@ -225,6 +256,31 @@ input {
   max-width: 600px;
   margin: 0 auto;
   color: #fff;
+}
+.section1 .section1__inner form[name=join-user-info] div.certification-number-box {
+  margin-bottom: unset;
+  display: none;
+  flex-direction: unset;
+  margin-top: 0.8rem;
+  width: 100%;
+}
+.section1 .section1__inner form[name=join-user-info] div.certification-number-box .certification-num-input {
+  width: 170px;
+}
+.section1 .section1__inner form[name=join-user-info] div.certification-number-box button {
+  width: 100%;
+  max-width: 110px;
+  height: 55px;
+  background-color: rgb(55, 83, 225);
+  color: #fff;
+  border-radius: 6px;
+  margin-left: 1.3rem;
+  transition: 0.3s;
+}
+.section1 .section1__inner form[name=join-user-info] div.certification-number-box button:disabled {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
 }
 
 .join-container .section1 {

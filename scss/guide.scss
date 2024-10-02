@@ -275,11 +275,15 @@ $main-color: rgba(55, 83, 225, 1);
 }
 
 @media (max-width: 1024px) {
-  .section .section__inner p.section-sub-title {
-    font-size: clamp(1.6rem, 2.909vw, 2.2rem);
-  }
-  .section .section__inner h2 {
-    font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+  .section {
+    .section__inner {
+      p.section-sub-title {
+        font-size: clamp(1.6rem, 2.909vw, 2.2rem);
+      }
+      h2 {
+        font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+      }
+    }
   }
 
   //
