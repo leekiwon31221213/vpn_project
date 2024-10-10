@@ -2,9 +2,6 @@
   position: fixed;
   bottom: 4rem;
   right: 3rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
 }
 .fixed-btn-box .fixed-btn__inner {
   display: flex;
@@ -36,9 +33,4 @@
 }
 .fixed-btn-box .fixed-btn__inner li a img {
   width: 25px;
-}
-
-.fixed-btn-box.active {
-  visibility: visible;
-  opacity: 1;
 }

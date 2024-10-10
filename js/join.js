@@ -13,11 +13,11 @@ function idCheck() {
     if (emailInput.value != '') {
       // 값이 있을때
       passwordInput.disabled = false;
-      confirmPasswordInput.disabled = false;
+      // confirmPasswordInput.disabled = false;
     } else {
       // 값이 없을때
       passwordInput.disabled = true;
-      confirmPasswordInput.disabled = true;
+      // confirmPasswordInput.disabled = true;
     }
   });
 }
@@ -31,12 +31,12 @@ function pwCheck() {
       matchText.innerText = '* 비밀번호가 일치 합니다.';
       matchText.style.display = 'block';
       matchText.style.color = 'rgba(55, 83, 225, 1)';
-      nick_name_input.disabled = false;
+      // nick_name_input.disabled = false;
     } else {
       matchText.innerText = '* 비밀번호가 일치하지 않습니다.';
       matchText.style.display = 'block';
       matchText.style.color = 'red';
-      nick_name_input.disabled = true;
+      // nick_name_input.disabled = true;
     }
   });
 }
@@ -51,10 +51,10 @@ function nickName() {
     if (nick_name_input.value != '') {
       // 값이 있을때
       // console.log('값이 있음');
-      phone_num_input.disabled = false;
+      // phone_num_input.disabled = false;
     } else {
       // 값이 없을때
-      phone_num_input.disabled = true;
+      // phone_num_input.disabled = true;
     }
   });
 }
@@ -77,11 +77,11 @@ function phone_num() {
 
       /*인증코드 클릭 했을때 */
       if (target.value.length === 13) {
-        send_btn.disabled = false;
+        // send_btn.disabled = false;
 
         send_btn.addEventListener('click', function () {
           certification_btn.style.display = 'flex';
-          certification_input.disabled = false;
+          // certification_input.disabled = false;
         });
       }
     }
@@ -97,9 +97,9 @@ function phone_num() {
 
   certification_input.addEventListener('input', function () {
     if (certification_input.value.length === 6) {
-      certification_btn_check.disabled = false;
+      // certification_btn_check.disabled = false;
     } else {
-      certification_btn_check.disabled = true;
+      // certification_btn_check.disabled = true;
     }
   });
 
@@ -109,7 +109,7 @@ function phone_num() {
     if (certification_input.value === '000000') {
       join_btn.disabled = false;
     } else {
-      join_btn.disabled = true;
+      // join_btn.disabled = true;
       alert('인증번호가 틀립니다.');
       certification_input.focus();
     }

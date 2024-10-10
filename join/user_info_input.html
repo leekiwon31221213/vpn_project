@@ -137,7 +137,6 @@
                 name="user-password"
                 placeholder="영문, 숫자, 특수문자 조합 6자이상 입력하세요"
                 required
-                disabled
               />
             </div>
 
@@ -152,7 +151,6 @@
                 name="user-password-confirm"
                 placeholder="정확하게 일치하게 입력"
                 required
-                disabled
               />
 
               <p class="pass-word-match-text"></p>
@@ -162,7 +160,7 @@
               <label for="nickname">
                 <span>이름(닉네임)</span>
               </label>
-              <input class="nick-name-input" type="text" id="nickname" name="user-nickname" placeholder="한글 2자이상 입력하세요" required disabled />
+              <input class="nick-name-input" type="text" id="nickname" name="user-nickname" placeholder="한글 2자이상 입력하세요" required />
             </div>
 
             <div class="phone-number-box">
@@ -188,15 +186,14 @@
                   placeholder="01012345678"
                   required
                   maxlength="13"
-                  disabled
                 />
-                <button type="button" class="certification-num-send" disabled>인증코드 전송</button>
+                <button type="button" class="certification-num-send">인증코드 전송</button>
               </div>
 
               <div class="certification-number-box">
-                <input type="text" class="certification-num-input" placeholder="인증번호를 입력해주세요" maxlength="6" disabled />
+                <input type="text" class="certification-num-input" placeholder="인증번호를 입력해주세요" maxlength="6" />
 
-                <button type="button" disabled class="certification-num-check">확인</button>
+                <button type="button" class="certification-num-check">확인</button>
               </div>
             </div>
 

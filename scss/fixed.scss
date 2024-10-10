@@ -7,9 +7,6 @@ $top-btn-bg: #3c57e1;
   position: fixed;
   bottom: 4rem;
   right: 3rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
 
   .fixed-btn__inner {
     display: flex;
@@ -45,9 +42,4 @@ $top-btn-bg: #3c57e1;
       }
     }
   }
-}
-
-.fixed-btn-box.active {
-  visibility: visible;
-  opacity: 1;
 }

@@ -162,7 +162,8 @@ input {
           }
         }
       }
-      .write-btn {
+      .write-btn,
+      .list-btn {
         text-align: right;
         margin-top: 5rem;
         display: flex;
@@ -172,7 +173,46 @@ input {
         }
       }
     }
+    .notice-detail-title {
+      width: 100%;
+      height: 155px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #f7f7f7;
+      margin-bottom: 4rem;
+      justify-content: center;
+      padding: 2rem 4rem;
 
+      h4 {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+
+      .writer-info {
+        display: flex;
+        margin-top: 2.5rem;
+        flex-wrap: wrap;
+        dl {
+          display: flex;
+          dt {
+            margin-right: 1rem;
+            color: #555;
+          }
+          dd {
+            margin-right: 4rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .notice-description {
+      padding: 0 4rem 7rem;
+      text-align: left;
+      line-height: 3rem;
+      font-size: 1.7rem;
+      border-bottom: 1px solid #ccc;
+    }
     .pagination {
       display: flex;
       align-items: center;

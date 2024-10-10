@@ -30,6 +30,22 @@
   .section1 .section1__inner .qna-box .qna-detail table thead tr:nth-child(1) {
     width: 15%;
   }
+  .section1 .section1__inner .notice-detail-title {
+    padding: 2rem clamp(2rem, 3.636vw, 4rem);
+  }
+  .section1 .section1__inner .notice-detail-title h4 {
+    font-size: clamp(2rem, 3.636vw, 2.5rem);
+    text-align: left;
+  }
+  .section1 .section1__inner .notice-detail-title .writer-info {
+    font-size: clamp(1.5rem, 2.727vw, 1.6rem);
+  }
+  .section1 .section1__inner .notice-detail-title .writer-info dl dd {
+    margin-right: clamp(2rem, 3.636vw, 4rem);
+  }
+  .section1 .section1__inner .notice-description {
+    padding: 0 2rem 6rem;
+  }
   .section1 .section1__inner .pagination ul li {
     margin: 0 1rem;
   }
@@ -46,12 +62,16 @@
 }
 @media (max-width: 768px) {
   .section1 .section1__inner .notice-box .write-btn,
-  .section1 .section1__inner .qna-box .write-btn {
+  .section1 .section1__inner .notice-box .list-btn,
+  .section1 .section1__inner .qna-box .write-btn,
+  .section1 .section1__inner .qna-box .list-btn {
     margin: 2.5rem 0;
     font-size: clamp(1.5rem, 2.727vw, 1.6rem);
   }
   .section1 .section1__inner .notice-box .write-btn a,
-  .section1 .section1__inner .qna-box .write-btn a {
+  .section1 .section1__inner .notice-box .list-btn a,
+  .section1 .section1__inner .qna-box .write-btn a,
+  .section1 .section1__inner .qna-box .list-btn a {
     max-width: clamp(80px, 14.545vw, 105px);
     height: 40px;
     line-height: 40px;
@@ -91,6 +111,19 @@
   .section1 .section1__inner .notice-box .notice-detail table tbody td,
   .section1 .section1__inner .qna-box .notice-detail table tbody td {
     font-size: clamp(1.4rem, 3.5vw, 1.5rem);
+  }
+  .section1 .section1__inner .notice-detail-title h4 {
+    font-size: clamp(1.7rem, 4.25vw, 2rem);
+  }
+  .section1 .section1__inner .notice-detail-title .writer-info {
+    font-size: clamp(1.3rem, 3.25vw, 1.5rem);
+  }
+  .section1 .section1__inner .notice-detail-title .writer-info dl dt,
+  .section1 .section1__inner .notice-detail-title .writer-info dl dd {
+    margin-right: clamp(0.8rem, 0.2vw, 2rem);
+  }
+  .section1 .section1__inner .notice-description p {
+    font-size: clamp(1.4rem, 3.5vw, 1.6rem);
   }
   .section3 .section3__inner .counsel-box li {
     max-width: 100px;

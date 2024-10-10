@@ -31,6 +31,24 @@
           }
         }
       }
+      .notice-detail-title {
+        padding: 2rem clamp(2rem, 3.636vw, 4rem);
+        h4 {
+          font-size: clamp(2rem, 3.636vw, 2.5rem);
+          text-align: left;
+        }
+        .writer-info {
+          font-size: clamp(1.5rem, 2.727vw, 1.6rem);
+          dl {
+            dd {
+              margin-right: clamp(2rem, 3.636vw, 4rem);
+            }
+          }
+        }
+      }
+      .notice-description {
+        padding: 0 2rem 6rem;
+      }
 
       .pagination {
         ul {
@@ -67,7 +85,8 @@
     .section1__inner {
       .notice-box,
       .qna-box {
-        .write-btn {
+        .write-btn,
+        .list-btn {
           margin: 2.5rem 0;
           font-size: clamp(1.5rem, 2.727vw, 1.6rem);
           a {
@@ -140,6 +159,26 @@
               }
             }
           }
+        }
+      }
+
+      .notice-detail-title {
+        h4 {
+          font-size: clamp(1.7rem, 4.25vw, 2rem);
+        }
+        .writer-info {
+          font-size: clamp(1.3rem, 3.25vw, 1.5rem);
+          dl {
+            dt,
+            dd {
+              margin-right: clamp(0.8rem, 0.2vw, 2rem);
+            }
+          }
+        }
+      }
+      .notice-description {
+        p {
+          font-size: clamp(1.4rem, 3.5vw, 1.6rem);
         }
       }
     }

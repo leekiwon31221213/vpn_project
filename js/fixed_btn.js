@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  window.addEventListener('scroll', function () {
-    if (document.documentElement.scrollTop > 150) {
-      document.querySelector('.fixed-btn-box').classList.add('active');
-    } else {
-      document.querySelector('.fixed-btn-box').classList.remove('active');
-    }
-  });
+  // window.addEventListener('scroll', function () {
+  //   if (document.documentElement.scrollTop > 150) {
+  //     document.querySelector('.fixed-btn-box').classList.add('active');
+  //   } else {
+  //     document.querySelector('.fixed-btn-box').classList.remove('active');
+  //   }
+  // });
   function fixed_btn() {
     modalElement = document.createElement('div');
     modalElement.classList.add('fixed-btn-box');
