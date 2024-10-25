@@ -4,6 +4,23 @@ $main-color: rgba(55, 83, 225, 1);
 input {
   border: $input-border;
   padding: 10px 20px;
+  font-family: "Pretendard-Regular";
+}
+
+textarea {
+  border: $input-border;
+  padding: 10px 20px;
+  font-family: "Pretendard-Regular";
+  border-radius: 6px;
+}
+@mixin inquire_btn($width, $height, $line-height, $background, $color, $text-align, $border-radius) {
+  max-width: $width;
+  height: $height;
+  line-height: $line-height;
+  background-color: $background;
+  color: $color;
+  text-align: $text-align;
+  border-radius: $border-radius;
 }
 
 .header-main-container {
@@ -234,7 +251,12 @@ input {
             tbody {
               tr {
                 td {
-                  &:nth-child(2) {
+                  a{
+                    width: 100%;
+                    
+                    display: inline-block;
+                  }
+                  &:nth-child(1) {
                     text-align: left;
                   }
 
@@ -245,6 +267,283 @@ input {
                   // }
                 }
               }
+            }
+          }
+          .write-btn{
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5rem;
+            a {
+              @include inquire_btn(105px, 50px, 50px, #333, #fff, center, 6px);
+            }
+          }
+          .write-detail-btn-box{
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2rem;
+
+            a.cancel-btn {            
+              @include inquire_btn(105px, 50px, 50px, rgb(0,0,0,40%), #fff, center, 6px);
+              margin-right: 2rem;
+            }
+            a.write-detail-btn {            
+              @include inquire_btn(105px, 50px, 50px, #333, #fff, center, 6px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* 문의글쓰기 */
+.mypage-container.inquire.write{
+  .section1{
+    .user-inquire{
+      .user-inquire-detail{
+        .inquire-form{
+          max-width: 893px;
+          margin:0 auto;
+          width: 100%;
+
+          .inquire-form__inner{
+            li{
+              display: flex;
+              align-items: center;
+              justify-content: center;  
+              label{
+                width: 30%;
+                text-align: left;
+                font-size: 1.5rem;
+              }
+              span{
+                width:100%;
+                display: inline-block;
+                text-align: left;
+                font-size: 1.5rem;
+              }
+              input,textarea{
+                width: 100%;
+                
+              }
+              textarea{
+                height: 40rem;
+              }
+              &.inquire-detail-select-box{
+                margin:3rem auto;
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 문의 디테일 */
+.mypage-container.inquire.detail {
+  .section1 {
+    .section1__inner {
+      .inquire-box {
+        display: flex;
+        justify-content: space-evenly;
+
+        h3 {
+          margin-bottom: 6rem;
+          color: #333;
+          font-weight: 600;
+          font-size: 2.8rem;
+        }
+
+        .inquire-detail {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          ul {
+            li.inquire-detail-title {
+              width: 100%;
+              height: 155px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              background-color: #f7f7f7;
+              margin-bottom: 4rem;
+              justify-content: center;
+              padding: 2rem 4rem;
+
+              h4 {
+                font-size: 2.5rem;
+                font-weight: 600;
+              }
+
+              .writer-info {
+                display: flex;
+                margin-top: 2.5rem;
+                flex-wrap: wrap;
+
+                dl {
+                  display: flex;
+                  dt {
+                    margin-right: 1rem;
+                    color: #555;
+                  }
+                  dd {
+                    margin-right: 4rem;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+
+            li.inquire-description {
+              padding: 0 4rem 7rem;
+              text-align: left;
+              line-height: 3rem;
+              font-size: 1.7rem;
+              border-bottom: 1px solid #ccc;
+
+              p {
+                margin: 0;
+              }
+            }
+
+            // 관리자 답변
+            li.admin-answer {
+              display: flex;
+              align-items: flex-start;
+              padding: 5rem 4rem;
+              border-radius: 8px;
+              margin-bottom: 3rem;
+              border-bottom: 1px solid #ccc;
+
+              img {
+                width: 24px;
+                height: 24px;
+                margin-right: 1rem;
+              }
+
+              .text-box-tie {
+                display: flex;
+                flex-direction: column;
+
+                .text-box {
+                    margin-bottom: 1rem;
+                    display: flex;
+                    width: 100%;
+                    .admin-answer-head dl{
+                        display: flex;
+                        dt {
+                          color: #555;
+                          font-weight: 500;
+                          margin-right: 0.5rem;
+                        }
+                        dd {
+                          font-weight: 600;
+                        }
+                    }
+                  }
+
+                  span {
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: #333;
+                  }
+                
+              }
+            }
+
+            // 사용자 답변
+            li.user-answer {
+              display: flex;
+              align-items: flex-start;
+              padding: 1.5rem;
+              background-color: #f7f7f7;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              margin-bottom: 2rem;
+
+              img {
+                width: 24px;
+                height: 24px;
+                margin-right: 1rem;
+              }
+
+              .text-box {
+                .user-answer-head {
+                  display: flex;
+                  gap: 2rem;
+                  margin-bottom: 1rem;
+
+                  dl {
+                    display: flex;
+
+                    dt {
+                      color: #555;
+                      font-weight: 500;
+                      margin-right: 0.5rem;
+                    }
+
+                    dd {
+                      font-weight: 600;
+                    }
+                  }
+                }
+
+                span {
+                  font-size: 1.6rem;
+                  line-height: 2.2rem;
+                  color: #333;
+                }
+              }
+            }
+
+            // 답변 작성 폼
+            li:last-child {
+              display: flex;
+              align-items: flex-start;
+
+              img {
+                width: 24px;
+                height: 24px;
+                margin-right: 1rem;
+              }
+
+              form {
+                flex-grow: 1;
+
+                textarea {
+                  width: 100%;
+                  height: 100px;
+                  padding: 1rem;
+                  border: 1px solid #ddd;
+                  border-radius: 6px;
+                  font-size: 1.6rem;
+                  line-height: 2rem;
+                }
+              }
+            }
+          }
+
+          .list-btn {
+            text-align: right;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+              display: inline-block;
+              width: 105px;
+              height: 50px;
+              line-height: 50px;
+              background-color: #333;
+              color: #fff;
+              text-align: center;
+              border-radius: 6px;
+              text-decoration: none;
+              font-weight: 600;
             }
           }
         }

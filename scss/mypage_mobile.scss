@@ -57,6 +57,28 @@
       }
     }
   }
+
+  /* 문의내역 디테일 */
+.mypage-container.inquire.write{
+  .section1{
+    .user-inquire{
+      .user-inquire-detail{
+        .inquire-form{
+          .inquire-form__inner{
+            li{
+              flex-direction: column;
+              align-items: flex-start;
+              label{
+                margin-bottom: 1.5rem;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 }
 
 @media (max-width: 768px) {

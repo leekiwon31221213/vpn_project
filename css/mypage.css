@@ -2,6 +2,14 @@
 input {
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 10px 20px;
+  font-family: "Pretendard-Regular";
+}
+
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  font-family: "Pretendard-Regular";
+  border-radius: 6px;
 }
 
 .header-main-container {
@@ -233,6 +241,252 @@ input {
 .mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail {
   width: 100%;
 }
-.mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail table tbody tr td:nth-child(2) {
+.mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail table tbody tr td a {
+  width: 100%;
+  display: inline-block;
+}
+.mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail table tbody tr td:nth-child(1) {
   text-align: left;
+}
+.mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail .write-btn {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5rem;
+}
+.mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail .write-btn a {
+  max-width: 105px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+.mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail .write-detail-btn-box {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+.mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail .write-detail-btn-box a.cancel-btn {
+  max-width: 105px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  margin-right: 2rem;
+}
+.mypage-container.inquire .section1 .section1__inner .user-inquire .user-inquire-detail .write-detail-btn-box a.write-detail-btn {
+  max-width: 105px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* 문의글쓰기 */
+.mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form {
+  max-width: 893px;
+  margin: 0 auto;
+  width: 100%;
+}
+.mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li label {
+  width: 30%;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li span {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li input, .mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li textarea {
+  width: 100%;
+}
+.mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li textarea {
+  height: 40rem;
+}
+.mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li.inquire-detail-select-box {
+  margin: 3rem auto;
+}
+
+/* 문의 디테일 */
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box h3 {
+  margin-bottom: 6rem;
+  color: #333;
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title {
+  width: 100%;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f7f7f7;
+  margin-bottom: 4rem;
+  justify-content: center;
+  padding: 2rem 4rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title .writer-info {
+  display: flex;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title .writer-info dl {
+  display: flex;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title .writer-info dl dt {
+  margin-right: 1rem;
+  color: #555;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title .writer-info dl dd {
+  margin-right: 4rem;
+  font-weight: 600;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-description {
+  padding: 0 4rem 7rem;
+  text-align: left;
+  line-height: 3rem;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #ccc;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-description p {
+  margin: 0;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer {
+  display: flex;
+  align-items: flex-start;
+  padding: 5rem 4rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie {
+  display: flex;
+  flex-direction: column;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box {
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head dl {
+  display: flex;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head dl dt {
+  color: #555;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head dl dd {
+  font-weight: 600;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie span {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #333;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head dl {
+  display: flex;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head dl dt {
+  color: #555;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head dl dd {
+  font-weight: 600;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box span {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #333;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li:last-child {
+  display: flex;
+  align-items: flex-start;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li:last-child img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li:last-child form {
+  flex-grow: 1;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li:last-child form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail .list-btn {
+  text-align: right;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail .list-btn a {
+  display: inline-block;
+  width: 105px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
 }

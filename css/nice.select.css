@@ -27,6 +27,10 @@
   width: 100%;
   color: rgba(33, 33, 33, 1);
 }
+
+.inquire-detail-select-box .family-site-title{
+  font-size: 1.4rem !important;
+}
 .family-site-title {
   font-size: 1.2rem;
   display: block;
@@ -45,7 +49,7 @@
 @media (max-width: 650px) {
   .select-box {
     font-size: 1.2rem;
-    width: 96%;
+    width: 100%;
     height: 40px;
     line-height: 39px;
   }
@@ -123,6 +127,11 @@
   width: 189px;
 }
 
+.inquire-detail-select-box .select-box .list{
+  width: 100%;
+  right: 0;
+  left: unset;
+}
 .select-box.id-search .list {
   max-width: 120px;
 }

@@ -20,7 +20,7 @@ input {
 
   position: relative;
   &::before {
-    content: '고객센터';
+    content: "고객센터";
     color: #fff;
     position: absolute;
     top: 50%;
@@ -113,7 +113,7 @@ input {
               align-items: center;
 
               &:after {
-                content: '\2b';
+                content: "\2b";
                 transition: 0.35s;
                 font-size: 2.2rem;
                 padding-left: 10px;
