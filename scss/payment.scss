@@ -1,0 +1,134 @@
+$input-border: 1px solid rgba(0, 0, 0, 0.15);
+$main-color: rgba(55, 83, 225, 1);
+@mixin payment_btn($width, $height, $line-height, $background, $color, $text-align, $border-radius) {
+  max-width: $width;
+  height: $height;
+  line-height: $line-height;
+  background-color: $background;
+  color: $color;
+  text-align: $text-align;
+  border-radius: $border-radius;
+}
+
+input {
+  border: $input-border;
+  padding: 10px 20px;
+  font-family: "Pretendard-Regular";
+}
+
+.header-main-container {
+  height: 400px;
+  position: relative;
+  
+  &::before {
+    content: '결제';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    font-size: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.payment-container {
+  .section1 {
+    background-color: unset;
+    margin-top: 105px;
+
+    .else-payment-dec {
+      font-size: 2.4rem;
+      margin-bottom: 1.3rem;
+      display: inline-block;
+      color: #212121;
+    }
+
+    .section1__inner {
+      .payment__inner {
+        max-width: 800px;
+        margin: 0 auto 10rem;
+
+        .payment-contents {
+          li {
+            display: flex;
+            align-items: center;
+
+            p {
+              font-size: 2rem;
+              padding-right: 8rem;
+            }
+            strong {
+              font-size: 2rem;
+              color: $main-color;
+              font-weight: 600;
+
+              span {
+                font-size: 1.6rem;
+                color: $main-color;
+              }
+              &.month-contract {
+                color: #212121;
+              }
+            }
+            &.common-hr {
+              margin-bottom: 5rem;
+              padding-bottom: 5rem;
+              border-bottom: 1px solid #c9c9c9;
+            }
+            &.sale-coupon-box{
+              input{
+                width: 50%;
+                margin-right: 1.5rem;
+              }
+              button{
+              width:100%;
+              @include payment_btn(85px,37px,37px,#3753E1,#fff,center,6px)
+              
+              }
+            }
+            &.payment-contents-ok-box {
+              justify-content: center;
+              margin-top: 8rem;
+              margin-bottom: 4.5rem;
+            }
+
+            &.complet-box {
+              width: 100%;
+              justify-content: center;
+              button.payment-complet {
+                @include payment_btn(100%, 50px, 50px, #999999, #fff, center, 6px);
+                width: 100%;
+                font-size: 1.7rem;
+              }
+            }
+
+            /* 페이먼트 버튼 박스 */
+            .payment-btn-box {
+              width: 80%;
+              display: flex;
+              justify-content: space-evenly;
+
+              button {
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                width: 180px;
+                height: 140px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                transition: 0.3s;
+
+                &.active {
+                  border: 2px solid #3753e1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -85,7 +85,7 @@ textarea {
 .section1 .section1__inner .user-inquire h3 {
   text-align: left;
   margin-bottom: 6rem;
-  color: #333;
+  color: #212121;
   font-weight: 600;
   font-size: 2.8rem;
 }
@@ -258,7 +258,7 @@ textarea {
   max-width: 105px;
   height: 50px;
   line-height: 50px;
-  background-color: #333;
+  background-color: #212121;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -283,7 +283,7 @@ textarea {
   max-width: 105px;
   height: 50px;
   line-height: 50px;
-  background-color: #333;
+  background-color: #212121;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -328,7 +328,7 @@ textarea {
 }
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box h3 {
   margin-bottom: 6rem;
-  color: #333;
+  color: #212121;
   font-weight: 600;
   font-size: 2.8rem;
 }
@@ -381,9 +381,8 @@ textarea {
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer {
   display: flex;
   align-items: flex-start;
-  padding: 5rem 4rem;
+  padding: 5rem 4rem 5rem 0;
   border-radius: 8px;
-  margin-bottom: 3rem;
   border-bottom: 1px solid #ccc;
 }
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer img {
@@ -399,6 +398,11 @@ textarea {
   margin-bottom: 1rem;
   display: flex;
   width: 100%;
+  background-color: #E4E7F6;
+  padding: 20px;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head {
+  display: flex;
 }
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head dl {
   display: flex;
@@ -411,19 +415,25 @@ textarea {
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head dl dd {
   font-weight: 600;
 }
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head dl.writer {
+  margin-right: 4rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .answer-dec {
+  text-align: left;
+  margin-top: 2rem;
+}
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie span {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  color: #333;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  color: #212121;
 }
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer {
   display: flex;
   align-items: flex-start;
-  padding: 1.5rem;
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
+  padding: 3rem;
   border-radius: 8px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
 }
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer img {
   width: 24px;
@@ -431,9 +441,11 @@ textarea {
   margin-right: 1rem;
 }
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head {
-  display: flex;
-  gap: 2rem;
   margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  background-color: #F7F7F7;
+  padding: 20px;
 }
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head dl {
   display: flex;
@@ -446,31 +458,41 @@ textarea {
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head dl dd {
   font-weight: 600;
 }
-.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box span {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  color: #333;
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head dl.writer {
+  margin-right: 4rem;
 }
-.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li:last-child {
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .user-dec {
+  text-align: left;
+  margin-top: 2rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer span {
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  color: #212121;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.anser-input-form {
   display: flex;
   align-items: flex-start;
+  padding-left: 6rem;
 }
-.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li:last-child img {
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.anser-input-form img {
   width: 24px;
   height: 24px;
   margin-right: 1rem;
 }
-.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li:last-child form {
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.anser-input-form form {
   flex-grow: 1;
 }
-.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li:last-child form textarea {
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.anser-input-form form textarea {
   width: 100%;
-  height: 100px;
+  height: 160px;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 1.6rem;
   line-height: 2rem;
+  font-size: 1.5rem;
+  color: #666;
 }
 .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail .list-btn {
   text-align: right;
@@ -483,10 +505,57 @@ textarea {
   width: 105px;
   height: 50px;
   line-height: 50px;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
+  font-size: 1.3rem;
+  margin-right: 2rem;
+}
+.mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail .list-btn .writer-ok {
+  max-width: 105px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #212121;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* 쿠폰 사용하기 */
+.mypage-container.coupon .section1 .section1__inner .coupon-contents {
+  height: 360px;
+  margin-bottom: 10rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie {
+  max-width: 625px;
+  margin: 0 auto;
+}
+.mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ul li.coupon-input-box {
+  margin-top: 6rem;
+  display: flex;
+}
+.mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ul li.coupon-input-box input {
+  width: 100%;
+}
+.mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ul li.coupon-input-box button {
+  width: 111px;
+  background-color: rgb(55, 83, 225);
+  color: #fff;
+  border-radius: 6px;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+.mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ol li p:not(.notice) {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ol li .notice {
+  padding-bottom: 2rem;
+  justify-content: flex-start;
 }

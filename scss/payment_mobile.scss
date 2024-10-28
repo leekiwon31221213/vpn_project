@@ -1,0 +1,101 @@
+@media (max-width: 1024px) {
+  .section .section__inner h2 {
+    font-size: clamp(2.8rem, 5.091vw, 3.5rem);
+  }
+  .payment-container {
+    .section1 {
+      .else-payment-dec {
+        font-size: clamp(2rem, 3.333vw, 2.4rem); 
+      }
+  
+      .section1__inner {
+        .payment__inner {
+          .payment-contents {
+            li {
+              justify-content: center;
+              p {
+                font-size: clamp(1.7rem, 2.833vw, 2rem);
+                padding-right: 0;
+                margin-bottom: 2rem;
+              }
+  
+              .payment-btn-box {
+                width: 100%;
+                button {
+                  width: clamp(80px,13.333vw,180px);
+                  height:clamp(80px,13.333vw,140px);
+                  img{
+                    width:clamp(25px,4.167vw,50px)
+                  }
+                }
+              }
+              &.common-hr{
+                flex-direction: column;
+              }
+              &.sale-coupon-box{
+                p{
+                margin-bottom: 0;
+                padding-right: 1rem;
+              }
+              button{
+                width: 60px;
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  .section3 {
+    border-radius: unset;
+    margin-bottom: unset;
+    .section3__inner {
+      p.section-sub-title {
+        font-size: clamp(1.6rem, 2.909vw, 2.2rem);
+      }
+      .counsel-box {
+        li {
+          a {
+            img {
+              width: clamp(35px, 4.557vw, 50px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .payment-container {
+    .section1 {
+      .else-payment-dec {
+        font-size: clamp(1.7rem,4.25vw, 2rem); 
+      }
+    }
+  }
+  //섹션3
+  .section3 {
+    .section3__inner {
+      .counsel-box {
+        li {
+          max-width: 100px;
+          height: 93px;
+          a {
+            flex-direction: column;
+            justify-content: center;
+            font-size: clamp(1.4rem, 1.366vw, 1.6rem);
+            img {
+              width: clamp(35px, 4.557vw, 50px);
+              margin-right: unset;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

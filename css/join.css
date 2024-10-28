@@ -148,7 +148,7 @@ input {
   border-radius: 6px;
 }
 .section1 .section1__inner .join-btn-box .join-btn-common {
-  color: #333;
+  color: #212121;
   width: 100%;
   height: 100%;
   transition: 0.3s;
@@ -157,7 +157,7 @@ input {
   border: 1px solid #ccc;
 }
 .section1 .section1__inner .join-btn-box .join-btn-common:enabled {
-  background-color: #333;
+  background-color: #212121;
   color: #fff;
   border: unset;
 }
@@ -210,7 +210,7 @@ input {
 }
 .section1 .section1__inner form[name=join-user-info] .select-input-tie button:disabled {
   background-color: #fff;
-  color: #333;
+  color: #212121;
   border: 1px solid #ccc;
 }
 .section1 .section1__inner form[name=join-user-info] .id-box p.id-overlap {
@@ -279,7 +279,7 @@ input {
 }
 .section1 .section1__inner form[name=join-user-info] div.certification-number-box button:disabled {
   background-color: #fff;
-  color: #333;
+  color: #212121;
   border: 1px solid #ccc;
 }
 

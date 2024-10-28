@@ -57,7 +57,7 @@
   font-weight: 600;
 }
 .guide-container .section .section__inner .user-guide-box li:nth-child(3) span strong, .guide-container .section .section__inner .user-guide-box li:nth-child(4) span strong {
-  color: #333;
+  color: #212121;
   font-weight: 600;
 }
 .guide-container .section .section__inner .user-guide-box li img {
@@ -66,7 +66,7 @@
 .guide-container .section .section__inner .user-guide-box a {
   width: 220px;
   height: 50px;
-  background-color: #000;
+  background-color: #212121;
   font-size: 1.6rem;
   color: #fff;
   border-radius: 6px;
@@ -131,7 +131,7 @@
 }
 .guide-container.guide-detail .section1 .section1__inner .user-guide-box li .guide-detail-btn-box a:nth-child(1) {
   background-color: unset;
-  color: #333;
+  color: #212121;
   border: 1px solid #111;
 }
 .guide-container.guide-detail .section1 .section1__inner .user-guide-box li .guide-detail-btn-box a:nth-child(2) {
@@ -225,6 +225,34 @@
   border: 1px solid #ccc;
   transform: scale(1.03);
   font-weight: 600;
+}
+.guide-container.guide-detail .guide-menu-box .guide-menu__inner ul li.main-menu {
+  position: relative;
+  z-index: 2;
+}
+.guide-container.guide-detail .guide-menu-box .guide-menu__inner ul li.main-menu .sub-menu {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  left: -36px;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  background-color: #fff;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.2);
+  height: 275px;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  display: none;
+}
+.guide-container.guide-detail .guide-menu-box .guide-menu__inner ul li.main-menu .sub-menu li {
+  width: 100%;
+}
+.guide-container.guide-detail .guide-menu-box .guide-menu__inner ul li.main-menu .sub-menu li a {
+  color: #212121;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {

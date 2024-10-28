@@ -54,7 +54,7 @@
     font-weight: 600;
   }
   .header-main-container header .mo-menu nav .menu-box {
-    color: #333;
+    color: #212121;
     margin-top: 9rem;
   }
   .header-main-container header .mo-menu nav .menu-box li {
@@ -94,7 +94,7 @@
     width: 100%;
     max-width: 30px;
     height: 2px;
-    background-color: #333;
+    background-color: #212121;
     transition: 0.3s;
   }
   .header-main-container header .mo-menu nav li .trigger span:nth-child(1) {

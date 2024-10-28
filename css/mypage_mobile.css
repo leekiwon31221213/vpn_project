@@ -39,7 +39,7 @@
   .section3 .section3__inner .counsel-box li a img {
     width: clamp(35px, 4.557vw, 50px);
   }
-  /* 문의내역 디테일 */
+  /* 문의내역 글쓰기 */
   .mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li {
     flex-direction: column;
     align-items: flex-start;
@@ -47,6 +47,127 @@
   .mypage-container.inquire.write .section1 .user-inquire .user-inquire-detail .inquire-form .inquire-form__inner li label {
     margin-bottom: 1.5rem;
     width: 100%;
+  }
+  /* 문의내역 디테일 */
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box h3 {
+    margin-bottom: 6rem;
+    color: #212121;
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f7f7f7;
+    margin-bottom: 4rem;
+    justify-content: center;
+    padding: 2rem 4rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title h4 {
+    font-size: 1.8rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title .writer-info dl {
+    font-size: 1.4rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-detail-title .writer-info dl dd {
+    margin-right: 2rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-description {
+    padding: 0 4rem 7rem;
+    text-align: left;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.inquire-description p {
+    margin: 0;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer img {
+    width: 20px;
+    height: 20px;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head {
+    display: flex;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head dl {
+    font-size: 1.4rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie .text-box .admin-answer-head dl.writer {
+    margin-right: 2rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.admin-answer .text-box-tie span {
+    font-size: 1.45rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer {
+    padding-left: unset;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer img {
+    width: 20px;
+    height: 20px;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head dl {
+    font-size: 1.4rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer .text-box .user-answer-head dl.writer {
+    margin-right: 2rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.user-answer span {
+    font-size: 1.45rem;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.anser-input-form {
+    padding-left: unset;
+  }
+  .mypage-container.inquire.detail .section1 .section1__inner .inquire-box .inquire-detail ul li.anser-input-form img {
+    width: 20px;
+    height: 20px;
+  }
+  /* 쿠폰 사용하기 */
+  .mypage-container.coupon .section1 .section1__inner .coupon-contents {
+    height: fit-content;
+    margin-bottom: 10rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+  }
+  .mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie {
+    width: 90%;
+    max-width: unset;
+    margin-bottom: 4rem;
+  }
+  .mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ul li.coupon-input-box {
+    margin-top: 6rem;
+    display: flex;
+  }
+  .mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ul li.coupon-input-box input {
+    width: 100%;
+  }
+  .mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ul li.coupon-input-box button {
+    width: 111px;
+    color: #fff;
+    border-radius: 6px;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ol li p:not(.notice) {
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ol li .notice {
+    padding-bottom: 2rem;
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
@@ -96,5 +217,8 @@
     width: clamp(35px, 4.557vw, 50px);
     margin-right: unset;
     margin-bottom: 10px;
+  }
+  .mypage-container.coupon .section1 .section1__inner .coupon-contents .coupon-contents-tie ol li p:not(.notice) {
+    font-size: 1.4rem;
   }
 }

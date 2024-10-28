@@ -10,7 +10,7 @@ $main-color: rgba(55, 83, 225, 1);
 .guide-container {
   .header-main-container {
     height: 400px;
-    --before-content: '';
+    --before-content: "";
 
     position: relative;
     &::before {
@@ -82,7 +82,7 @@ $main-color: rgba(55, 83, 225, 1);
           &:nth-child(4) {
             span {
               strong {
-                color: #333;
+                color: #212121;
                 font-weight: 600;
               }
             }
@@ -92,7 +92,7 @@ $main-color: rgba(55, 83, 225, 1);
           }
         }
         a {
-          @include apkBtn(220px, 50px, #000, 1.6rem, #fff, 6px);
+          @include apkBtn(220px, 50px, #212121, 1.6rem, #fff, 6px);
           line-height: 50px;
         }
       }
@@ -162,7 +162,7 @@ $main-color: rgba(55, 83, 225, 1);
 
               &:nth-child(1) {
                 background-color: unset;
-                color: #333;
+                color: #212121;
                 border: 1px solid #111;
               }
               &:nth-child(2) {
@@ -188,7 +188,7 @@ $main-color: rgba(55, 83, 225, 1);
         align-items: center;
         margin-bottom: 4rem;
         &::before {
-          content: '1';
+          content: "1";
           display: inline-block;
           width: 30px;
           height: 30px;
@@ -269,6 +269,36 @@ $main-color: rgba(55, 83, 225, 1);
           border: 1px solid #ccc;
           transform: scale(1.03);
           font-weight: 600;
+        }
+        li.main-menu {
+          position: relative;
+          z-index: 2;
+
+          .sub-menu {
+            position: absolute;
+            z-index: 2;
+            top: 60px;
+            left: -36px;
+            display: flex;
+            flex-direction: column;
+            width: 220px;
+            background-color: #fff;
+            box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.2);
+            height: 275px;
+            max-width: 200px;
+            border: 1px solid #ccc;
+            display: none;
+
+            li {
+              width: 100%;
+              a {
+                color: #212121;
+                font-size: 1.5rem;
+                font-weight: 400;
+                text-align: center;
+              }
+            }
+          }
         }
       }
     }

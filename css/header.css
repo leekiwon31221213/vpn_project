@@ -24,8 +24,11 @@
   justify-content: flex-end;
   padding: 15px 0;
 }
-.header-main-container header nav ul.login-box li:nth-child(1) {
+.header-main-container header nav ul.login-box li {
   margin-right: 30px;
+}
+.header-main-container header nav ul.login-box li:last-child {
+  margin-right: 0;
 }
 .header-main-container header nav ul.logo-menu-box {
   display: flex;

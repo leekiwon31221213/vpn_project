@@ -80,7 +80,7 @@ $main-color: rgba(55, 83, 225, 1);
           &:nth-child(4) {
             span {
               strong {
-                color: #333;
+                color: #212121;
                 font-weight: 600;
               }
             }
@@ -90,7 +90,7 @@ $main-color: rgba(55, 83, 225, 1);
           }
         }
         a {
-          @include apkBtn(220px, 50px, #000, 1.6rem, #fff, 6px);
+          @include apkBtn(220px, 50px, #212121, 1.6rem, #fff, 6px);
           line-height: 50px;
         }
       }
@@ -140,7 +140,7 @@ $main-color: rgba(55, 83, 225, 1);
                   color: #00a8e8;
                 }
                 &.apple {
-                  color: #333;
+                  color: #212121;
                 }
               }
             }
@@ -182,7 +182,7 @@ $main-color: rgba(55, 83, 225, 1);
 
               &:nth-child(1) {
                 background-color: unset;
-                color: #333;
+                color: #212121;
                 border: 1px solid #111;
               }
               &:nth-child(2) {

@@ -58,19 +58,20 @@
     }
   }
 
-  /* 문의내역 디테일 */
-.mypage-container.inquire.write{
-  .section1{
-    .user-inquire{
-      .user-inquire-detail{
-        .inquire-form{
-          .inquire-form__inner{
-            li{
-              flex-direction: column;
-              align-items: flex-start;
-              label{
-                margin-bottom: 1.5rem;
-                width: 100%;
+  /* 문의내역 글쓰기 */
+  .mypage-container.inquire.write {
+    .section1 {
+      .user-inquire {
+        .user-inquire-detail {
+          .inquire-form {
+            .inquire-form__inner {
+              li {
+                flex-direction: column;
+                align-items: flex-start;
+                label {
+                  margin-bottom: 1.5rem;
+                  width: 100%;
+                }
               }
             }
           }
@@ -78,7 +79,185 @@
       }
     }
   }
-}
+
+  /* 문의내역 디테일 */
+  .mypage-container.inquire.detail {
+    .section1 {
+      .section1__inner {
+        .inquire-box {
+          display: flex;
+          justify-content: space-evenly;
+
+          h3 {
+            margin-bottom: 6rem;
+            color: #212121;
+            font-weight: 600;
+            font-size: 2.8rem;
+          }
+
+          .inquire-detail {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            ul {
+              li.inquire-detail-title {
+                width: 100%;
+                height: 155px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: #f7f7f7;
+                margin-bottom: 4rem;
+                justify-content: center;
+                padding: 2rem 4rem;
+
+                h4 {
+                  font-size: 1.8rem;
+                }
+
+                .writer-info {
+                  dl {
+                    font-size: 1.4rem;
+                    dd {
+                      margin-right: 2rem;
+                    }
+                  }
+                }
+              }
+
+              li.inquire-description {
+                padding: 0 4rem 7rem;
+                text-align: left;
+                line-height: 3rem;
+                font-size: 1.5rem;
+                border-bottom: 1px solid #ccc;
+
+                p {
+                  margin: 0;
+                }
+              }
+
+              // 관리자 답변
+              li.admin-answer {
+                img {
+                  width: 20px;
+                  height: 20px;
+                }
+
+                .text-box-tie {
+                  .text-box {
+                    .admin-answer-head {
+                      display: flex;
+                    }
+                    .admin-answer-head dl {
+                      font-size: 1.4rem;
+                      &.writer {
+                        margin-right: 2rem;
+                      }
+                    }
+                  }
+                  span {
+                    font-size: 1.45rem;
+                  }
+                }
+              }
+
+              // 사용자 답변
+              li.user-answer {
+                padding-left: unset;
+                img {
+                  width: 20px;
+                  height: 20px;
+                }
+
+                .text-box {
+                  .user-answer-head {
+                    dl {
+                      font-size: 1.4rem;
+                      &.writer {
+                        margin-right: 2rem;
+                      }
+                    }
+                  }
+                }
+                span {
+                  font-size: 1.45rem;
+                }
+              }
+
+              // 답변 작성 폼
+              li.anser-input-form {
+                padding-left: unset;
+
+                img {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* 쿠폰 사용하기 */
+  .mypage-container.coupon {
+    .section1 {
+      .section1__inner {
+        .coupon-contents {
+          height: fit-content;
+          margin-bottom: 10rem;
+          border: 1px solid #ccc;
+          box-shadow: 0 0px 10px rgb(0, 0, 0, 15%);
+          border-radius: 20px;
+
+          .coupon-contents-tie {
+            width: 90%;
+            max-width: unset;
+            margin-bottom: 4rem;
+
+            ul {
+              li.coupon-input-box {
+                margin-top: 6rem;
+                display: flex;
+
+                input {
+                  width: 100%;
+                }
+
+                button {
+                  width: 111px;
+                  color: #fff;
+                  border-radius: 6px;
+                  margin-left: 1.5rem;
+                  font-size: 1.3rem;
+                }
+              }
+            }
+
+            ol {
+              li {
+                p {
+                  &:not(.notice) {
+                    text-align: left;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                  }
+                }
+
+                .notice {
+                  padding-bottom: 2rem;
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -159,6 +338,24 @@
               width: clamp(35px, 4.557vw, 50px);
               margin-right: unset;
               margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mypage-container.coupon {
+    .section1 {
+      .section1__inner {
+        .coupon-contents {
+          .coupon-contents-tie {
+            ol {
+              li {
+                p:not(.notice) {
+                  font-size: 1.4rem;
+                }
+              }
             }
           }
         }

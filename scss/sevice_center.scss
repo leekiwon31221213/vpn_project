@@ -82,7 +82,7 @@ input {
 
       h3 {
         margin-bottom: 6rem;
-        color: #333;
+        color: #212121;
         font-weight: 600;
         font-size: 2.8rem;
       }
@@ -169,7 +169,7 @@ input {
         display: flex;
         justify-content: flex-end;
         a {
-          @include service_btn(105px, 50px, 50px, #333, #fff, center, 6px);
+          @include service_btn(105px, 50px, 50px, #212121, #fff, center, 6px);
         }
       }
     }
@@ -250,7 +250,7 @@ input {
       }
       .search-btn {
         width: 100%;
-        @include service_btn(105px, 50px, 50px, #333, #fff, center, 6px);
+        @include service_btn(105px, 50px, 50px, #212121, #fff, center, 6px);
         margin-left: 1rem;
       }
     }

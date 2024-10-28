@@ -55,7 +55,7 @@
   font-weight: 600;
 }
 .down-load-container .section .section__inner .down-load-box li:nth-child(3) span strong, .down-load-container .section .section__inner .down-load-box li:nth-child(4) span strong {
-  color: #333;
+  color: #212121;
   font-weight: 600;
 }
 .down-load-container .section .section__inner .down-load-box li img {
@@ -64,7 +64,7 @@
 .down-load-container .section .section__inner .down-load-box a {
   width: 220px;
   height: 50px;
-  background-color: #000;
+  background-color: #212121;
   font-size: 1.6rem;
   color: #fff;
   border-radius: 6px;
@@ -103,7 +103,7 @@
   color: #00a8e8;
 }
 .down-load-container .section1 .section1__inner .down-load-box li .device-box .down-load-text strong.apple {
-  color: #333;
+  color: #212121;
 }
 .down-load-container .section1 .section1__inner .down-load-box li .text-btn-box-tie .guide-text-box p:nth-child(1) {
   font-size: 2.2rem;
@@ -136,7 +136,7 @@
 }
 .down-load-container .section1 .section1__inner .down-load-box li .guide-detail-btn-box a:nth-child(1) {
   background-color: unset;
-  color: #333;
+  color: #212121;
   border: 1px solid #111;
 }
 .down-load-container .section1 .section1__inner .down-load-box li .guide-detail-btn-box a:nth-child(2) {
