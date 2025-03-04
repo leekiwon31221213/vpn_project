@@ -8,7 +8,7 @@ input {
 
 .header-main-container {
   height: 400px;
-  --before-content: '';
+  --before-content: "";
 
   position: relative;
   &::before {
@@ -75,6 +75,31 @@ input {
         align-items: center;
       }
     }
+    .id-pw-search-info {
+      background-color: #f7f7f7;
+      padding: 4rem;
+      max-width: 680px;
+      margin: 0 auto 10rem;
+      border-radius: 1rem;
+
+      li {
+        display: flex;
+        font-size: 1.5rem;
+        &:nth-child(1) {
+          margin-bottom: 2rem;
+        }
+        p {
+          &:nth-child(1) {
+            margin-right: 2rem;
+            margin-bottom: unset;
+          }
+          &:nth-child(2) {
+            font-weight: 600;
+            margin-bottom: unset;
+          }
+        }
+      }
+    }
   }
 }
 .id-pw-search-page {
@@ -85,11 +110,11 @@ input {
       }
       form {
         align-items: flex-start;
-        input[name='id'] {
+        input[name="id"] {
           margin-bottom: 30px;
         }
-        label[for='phone-number'],
-        [for='id'] {
+        label[for="phone-number"],
+        [for="id"] {
           span {
             margin-bottom: 10px;
             display: block;

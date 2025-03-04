@@ -28,7 +28,7 @@
   color: rgba(33, 33, 33, 1);
 }
 
-.inquire-detail-select-box .family-site-title{
+.inquire-detail-select-box .family-site-title {
   font-size: 1.4rem !important;
 }
 .family-site-title {
@@ -63,7 +63,7 @@
 .select-box:after {
   border-bottom: 2px solid #212121;
   border-right: 2px solid #212121;
-  content: '';
+  content: "";
   display: block;
   height: 7px;
   margin-top: -4px;
@@ -127,13 +127,13 @@
   width: 189px;
 }
 
-.inquire-detail-select-box .select-box .list{
+.inquire-detail-select-box .select-box .list {
   width: 100%;
   right: 0;
   left: unset;
 }
 .select-box.id-search .list {
-  max-width: 120px;
+  max-width: fit-content;
 }
 
 .partnership-inquiry .select-box.exchange-select-order-rate .list {

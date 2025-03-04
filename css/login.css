@@ -66,6 +66,28 @@ input {
   display: flex;
   align-items: center;
 }
+.section1 .section1__inner .id-pw-search-info {
+  background-color: #f7f7f7;
+  padding: 4rem;
+  max-width: 680px;
+  margin: 0 auto 10rem;
+  border-radius: 1rem;
+}
+.section1 .section1__inner .id-pw-search-info li {
+  display: flex;
+  font-size: 1.5rem;
+}
+.section1 .section1__inner .id-pw-search-info li:nth-child(1) {
+  margin-bottom: 2rem;
+}
+.section1 .section1__inner .id-pw-search-info li p:nth-child(1) {
+  margin-right: 2rem;
+  margin-bottom: unset;
+}
+.section1 .section1__inner .id-pw-search-info li p:nth-child(2) {
+  font-weight: 600;
+  margin-bottom: unset;
+}
 
 .id-pw-search-page .section1 .section1__inner p {
   margin-bottom: 15px;

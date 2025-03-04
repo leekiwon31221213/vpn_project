@@ -300,6 +300,7 @@ main ul .guide-btn a img {
 }
 .section4 .section4__inner .table-tie table {
   vertical-align: middle;
+  width: 40%;
 }
 .section4 .section4__inner .table-tie table thead {
   background-color: rgb(55, 83, 225);

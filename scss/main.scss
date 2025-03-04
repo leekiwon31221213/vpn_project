@@ -1,5 +1,5 @@
 $main-color: rgba(55, 83, 225, 1);
-$fontFamily: 'Pretendard-Regular';
+$fontFamily: "Pretendard-Regular";
 $border-radius: 16px;
 
 ::-webkit-scrollbar {
@@ -48,7 +48,7 @@ main {
     margin-bottom: 50px;
 
     &::after {
-      content: '';
+      content: "";
       width: 80px;
       height: 1px;
       background-color: rgba(198, 198, 198, 1);
@@ -141,7 +141,7 @@ main {
       font-size: clamp(2.2rem, 2.146vw, 2.4rem);
       position: relative;
       &::before {
-        content: '+';
+        content: "+";
         position: absolute;
         width: 35px;
         height: 35px;
@@ -167,7 +167,7 @@ main {
     align-items: center;
     position: relative;
     &::before {
-      content: '!';
+      content: "!";
       width: 20px;
       height: 20px;
       line-height: 20px;
@@ -346,6 +346,7 @@ main {
 
       table {
         vertical-align: middle;
+        width: 40%;
 
         thead {
           background-color: $main-color;

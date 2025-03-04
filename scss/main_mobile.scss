@@ -84,7 +84,7 @@
           }
           li {
             &:nth-child(1) {
-              flex: unset;
+              flex: unset !important;
             }
             /* 햄버거 메뉴 */
             .trigger {
@@ -235,6 +235,9 @@
     .section4__inner {
       .table-tie {
         flex-direction: column;
+        table {
+          width: 100%;
+        }
       }
     }
   }
